@@ -239,7 +239,30 @@
         "emirate_label": "Emiraat",
         "emirate_placeholder": "Emiraat",
         "state_and_territory_label": "Staat/gebied",
-        "state_and_territory_placeholder": "Staat/gebied"
+        "state_and_territory_placeholder": "Staat/gebied",
+        "phone_label": "Telefoon",
+        "optional_phone_label": "Foon (opsioneel)",
+        "phone_placeholder": "Telefoon",
+        "phone_tooltip": "In geval ons jou moet kontak oor jou bestelling",
+        "zip_code_label": "Poskode",
+        "optional_zip_code_label": "Poskode (opsioneel)",
+        "zip_code_placeholder": "Poskode",
+        "postal_code_label": "Poskode",
+        "optional_postal_code_label": "Poskode (opsioneel)",
+        "postal_code_placeholder": "Poskode",
+        "postcode_label": "Poskode",
+        "optional_postcode_label": "Poskode (opsioneel)",
+        "postcode_placeholder": "Poskode",
+        "pincode_label": "PIN-kode",
+        "optional_pincode_label": "PIN-kode (opsioneel)",
+        "pincode_placeholder": "PIN-kode",
+        "civic_number_warning": "Voeg 'n huisnommer by as jy een het",
+        "optional_last_name_label": "Van (opsioneel)",
+        "different_shipping_address_label": "Stuur na 'n ander adres",
+        "different_shipping_address_text": "Gebruik 'n eenmalige adres vir hierdie bestelling",
+        "change_company_location_link_label": "Verander maatskappy se ligging",
+        "change_location_link_label": "Verander ligging",
+        "ship_to_company": "Stuur na {{companyName}}"
       },
       "alternative_payment_method_banner": {
         "or": "OF",
@@ -636,6 +659,112 @@
         "waiting_on_pickup_location_notice": "Kry tans beskikbare optelplekke …",
         "no_rates_for_cart_or_destination_notice": "Daar is geen afleweringsmetodes vir jou mandjie of adres beskikbaar nie",
         "no_pickup_location_notice": "Ten minste een van jou produkte is nie beskikbaar vir afhaal nie"
+      },
+      "delivery_options": {
+        "free_total_label": "Gratis",
+        "ship": "Skip",
+        "ship_to_address": "Stuur na adres",
+        "shipping_address": "Afleweringsadres",
+        "pick_up": "Tel op",
+        "pick_up_from_store": "Afhaal in winkel",
+        "pick_up_locations": "Winkel liggings",
+        "pick_up_in_one_hour": "Gewoonlik gereed in 1 uur",
+        "pick_up_in_two_hours": "Gewoonlik binne 2 uur gereed",
+        "pick_up_in_four_hours": "Gewoonlik binne 4 uur gereed",
+        "pick_up_in_twenty_four_hours": "Gewoonlik binne 24 uur gereed",
+        "pick_up_in_two_to_four_days": "Gewoonlik gereed in 2-4 dae",
+        "pick_up_in_five_or_more_days": "Gewoonlik gereed in 5+ dae",
+        "pick_up_in_zero_to_two_hours": "Klaar vir afhaal binne 2 ure",
+        "pick_up_in_two_to_four_hours": "Klaar vir afhaal binne 4 ure",
+        "pick_up_immediately": "Gereed vir afhaal nou",
+        "pick_up_next_day": "Klaar vir afhaal volgende dag",
+        "pickup_point_method_definition": "Stuur na afhaalpunt",
+        "retail_method_definition": "Kleinhandelversending",
+        "none_method_definition": "Geen versending nie",
+        "subscription_pickup_information": "Hierdie afleweringsmetode sal van toepassing wees op alle items in hierdie bestelling en op alle toekomstige bestellings vir hierdie intekening."
+      },
+      "customer_account": {
+        "not_user_label": "Nie %{first_name} nie?",
+        "have_an_account_label": "Het jy 'n rekening?",
+        "sign_in_link_label": "Meld aan",
+        "sign_out_link_label": "Teken uit",
+        "save_my_information_label": "Stoor hierdie inligting vir 'n volgende keer",
+        "invalid_address": "Geselekteerde adres is ongeldig. %{update_address_link} of kies 'n ander adres.",
+        "incomplete_address": "Geselekteerde adres is onvolledig. %{update_address_link} of kies 'n ander adres.",
+        "rollup_label": "Rekening",
+        "invalid_shipping_method_summary": "Kies 'n geldige afleweringsadres om beskikbare afleweringsmetodes te sien",
+        "saved_address_option_description": {
+          "one": "Jy het {{count}} gestoorde adres.",
+          "other": "Jy het {{count}} gestoorde adresse."
+        },
+        "saved_address_option_link": "Gebruik 'n gestoorde adres",
+        "saved_address_modal_title": "Gebruik my gestoorde adres"
+      },
+      "stock": {
+        "page_title": "Voorraadkwessies",
+        "title": "Uit voorraad",
+        "items_unavailable_notice": "Sommige items is nie meer beskikbaar nie.",
+        "product_column_header": "Produkte",
+        "quantity_column_header": "Hoeveelheid",
+        "price_column_header": "Prys",
+        "removed_from_cart_notice": "Uit kar verwyder",
+        "sold_out_label": "Uitverkoop",
+        "reduced_label": "Verminder",
+        "reduced_with_quantity_label": "Slegs %{quantity_available} oor",
+        "remove_from_cart_button_label": "Verwyder uit kar",
+        "continue_shopping_button_label": "Gaan voort",
+        "go_back_to_cart_button_label": "Gaan terug na my kar",
+        "remove": "Verwyder",
+        "return_to_store_label": "Keer terug na winkel",
+        "continue_cta_label": "Gaan voort met afreken",
+        "item_label": {
+          "one": "{{count}} item",
+          "other": "{{count}} items"
+        },
+        "empty_cart_label": "Jou mandjie is leeg",
+        "quantity_update": {
+          "page_title": "Hoeveelheid opdatering",
+          "title": "Hoeveelheid opdatering",
+          "description": "Beskikbare hoeveelhede vir hierdie items het verander en word in jou mandjie opgedateer."
+        },
+        "unpurchasable_product": {
+          "title": "Onkoopbare produk",
+          "header": "Sommige items is uit jou mandjie verwyder",
+          "message": "Hierdie items is nie beskikbaar vir B2B-bestellings nie.",
+          "status_column_header": "Nie beskikbaar nie"
+        },
+        "unpurchasable_product_generic": {
+          "title": "Onkoopbare produk",
+          "header": "Sommige items is uit jou mandjie verwyder",
+          "message": "Hierdie items is nie beskikbaar nie.",
+          "status_column_header": "Nie beskikbaar nie"
+        },
+        "unfulfillable_product": {
+          "title": "Aflewering nie beskikbaar nie",
+          "message": {
+            "one": "%{delivery_method} is nie meer vir hierdie item beskikbaar nie.",
+            "other": "%{delivery_method} is nie meer vir hierdie items beskikbaar nie."
+          },
+          "default_message": {
+            "one": "Die gekose afleweringsmetode is nie meer vir hierdie item beskikbaar nie.",
+            "other": "Die gekose afleweringsmetode is nie meer vir hierdie items beskikbaar nie."
+          }
+        },
+        "unshippable_product": {
+          "title": "Geen aflewering beskikbaar nie",
+          "header": {
+            "one": "Geen aflewering beskikbaar vir %{count} item nie",
+            "other": "Geen aflewering beskikbaar vir %{count} items nie"
+          },
+          "message": {
+            "one": "Hierdie item sal uit jou mandjie verwyder word omdat daar geen afleweringsmetodes vir jou adres beskikbaar is nie.",
+            "other": "Hierdie items sal uit jou mandjie verwyder word omdat daar geen afleweringsmetodes vir jou adres beskikbaar is nie."
+          },
+          "status_column_header": "Geen aflewering nie"
+        },
+        "price_update": {
+          "title": "Prys opdatering"
+        }
       }
     }
   },
@@ -910,58 +1039,178 @@
       "loading_accessibility_message": "Laai adres",
       "loading_addresses_accessibility_message": "Laai adresse"
     },
-    "ui_components": {
-      "removeItem": "Verwyder {{label}}",
-      "removeTag": "Verwyder merker",
-      "month": {
-        "one": "maand",
-        "other": "maande"
+    "B2B": {
+      "orders": {
+        "order_list_column_headers_contact": "Kontak",
+        "removed_company_contact_tooltip": "Uit maatskappy verwyder"
       },
-      "mapClusterTitle": {
-        "one": "Groep van {{number}} merker",
-        "other": "Groep van {{number}} merkers"
+      "draft_order_details": {
+        "draft_order_subtitle": "Bevestig {{date}} vanaf bestelling {{draftOrderName}}",
+        "loading": "Laai tans bestellingbesonderhede",
+        "loading_finished_accessibility_message": "Bestellingbesonderhede is gelaai",
+        "payment_status": {
+          "pending": {
+            "banner_overdue": {
+              "one": "Jou betaling is {{count}} dag agterstallig",
+              "other": "Jou betaling is {{count}} dae agterstallig"
+            },
+            "banner_due": {
+              "one": "Jou betaling is oor {{count}} dag betaalbaar",
+              "other": "Jou betaling is oor {{count}} dae betaalbaar"
+            },
+            "banner_due_today": "Jou betaling is vandag betaalbaar",
+            "title": "Betaling verskuldig",
+            "title_with_date": "Betaling betaalbaar {{date}}",
+            "title_due_on_receipt": "Betaling nog nie betaalbaar nie",
+            "title_due_on_fulfillment": "Betaling verskuldig by vervulling",
+            "description_overdue": "Jou betaling is laat.",
+            "description_partially_paid": "Hierdie bestelling is gedeeltelik betaal. Jy het 'n oorblywende balans.",
+            "description_authorized": "Jou betaalmetode sal op die sperdatum gehef word, of jy kan nou betaal.",
+            "description_waiting_for_manual_payment": "Hierdie bestelling het 'n hangende betaling. Die balans sal opgedateer word wanneer betaling ontvang is.",
+            "description_due_on_receipt": "Jy sal 'n faktuur ontvang wanneer betaling verskuldig is.",
+            "description_due_on_receipt_partially_paid": "Hierdie bestelling is gedeeltelik betaal. Jy het 'n oorblywende balans. Jy sal 'n faktuur ontvang wanneer betaling verskuldig is.",
+            "description_due_on_fulfillment": "Betaling is verskuldig sodra alle items in hierdie bestelling vervul is.",
+            "description_due_on_fulfillment_partially_paid": "Hierdie bestelling is gedeeltelik betaal. Jy het 'n oorblywende balans. Betaling is verskuldig sodra alle items in hierdie bestelling vervul is."
+          },
+          "draft": {
+            "description": "Betalingsbesonderhede word besluit wanneer die bestelling bevestig word.",
+            "title": "Betaling nog nie betaalbaar nie",
+            "in_review": {
+              "description": "Betalingsbesonderhede word besluit wanneer die bestelling bevestig word.",
+              "title": "Betaling nog nie betaalbaar nie"
+            },
+            "submitted": {
+              "description": "Dien betaling in om hierdie bestelling te bevestig.",
+              "title": "Betaal om te bevestig",
+              "deposit": {
+                "title": "Betaling is verskuldig",
+                "due_later": "Die saldo is op {{translatedName}} terme en is betaalbaar op {{dueDate}} .",
+                "due_on_fulfillment": "Die balans is betaalbaar sodra alle items in hierdie bestelling vervul is.",
+                "due_on_receipt": "Jy sal 'n faktuur vir die oorblywende saldo ontvang.",
+                "due_on_date": "Die balans is betaalbaar op {{dueDate}} ."
+              }
+            },
+            "deposit": {
+              "due_later": "{{depositAmount}} sal betaalbaar wees wanneer jou bestelling bevestig is. Die balans sal op {{translatedName}} terme wees.",
+              "due_on_fulfillment": "{{depositAmount}} sal betaalbaar wees wanneer jou bestelling bevestig is. Die balans sal betaalbaar wees wanneer die bestelling uitgevoer is.",
+              "due_on_receipt": "{{depositAmount}} sal betaalbaar wees wanneer jou bestelling bevestig is. Die balans sal later betaalbaar wees.",
+              "due_on_date": "{{depositAmount}} sal betaalbaar wees wanneer jou bestelling bevestig is. Die balans sal op {{dueDate}} betaalbaar wees."
+            }
+          },
+          "paid": {
+            "title": "Betaal",
+            "title_with_date": "Betaal {{date}}",
+            "description": "Jou bestelling is ten volle betaal."
+          },
+          "refund": {
+            "title": "Terugbetaal",
+            "title_with_date": "Terugbetaal {{date}}",
+            "description_full_refund": "Jy het 'n volle terugbetaling vir hierdie bestelling ontvang.",
+            "description_single_refund": "Jy het 'n gedeeltelike terugbetaling vir hierdie bestelling ontvang.",
+            "description_multiple_refunds": "Jy het gedeeltelike terugbetalings vir hierdie bestelling ontvang."
+          },
+          "canceled": {
+            "title": "Betaling gekanselleer",
+            "description": "Jy is nie aangekla nie."
+          },
+          "pay_now": "Betaal nou",
+          "pay_now_accessibility_label": "Betaal nou vir bestelling {{orderName}}",
+          "title": "Betalingstatus"
+        },
+        "order_timeline": {
+          "expand_events_label": "Wys besonderhede",
+          "expand_events_accessibility_label": "Wys konsepbestellingbesonderhede",
+          "hide_events_label": "Versteek besonderhede",
+          "hide_events_accessibility_label": "Versteek konsepbestellingbesonderhede"
+        },
+        "subtitle": "Ingedien {{date}}",
+        "title": "Bestel {{name}}"
       },
-      "expandSheet": "Brei uit",
-      "qrCode": "QR-kode",
-      "addFile": "Voeg lêer by",
-      "dropzoneInvalidFileType": "Lêertipe word nie ondersteun nie",
-      "dropzoneDraggedOver": "Los lêer om op te laai"
-    },
-    "profile_preview_bar": {
-      "customize_button": "Pasmaak",
-      "hide_bar": "Versteek kroeg",
-      "navigate_to_admin": "Navigeer na admin",
-      "close_preview": "Maak voorskou toe",
-      "previewing": "Jy bekyk tans:",
-      "saved_at": "Gestoor {{date}} om {{time}}",
-      "viewing": "Jy bekyk:",
-      "not_available": "Profieldata nie beskikbaar nie",
-      "actions_button": "Aksies"
-    },
-    "active_inspector": {
-      "extension": {
-        "select": "Kies die uitbreiding genaamd {{extensionName}}",
-        "unselect": "Ontkies die uitbreiding genaamd {{extensionName}}",
-        "move_down": "Skuif uitbreiding na die volgende posisie",
-        "move_up": "Skuif uitbreiding na die vorige posisie",
-        "remove": "Verwyder uitbreiding",
-        "move_down_tooltip": "Skuif na die volgende posisie",
-        "move_up_tooltip": "Beweeg na vorige posisie",
-        "remove_tooltip": "Verwyder"
+      "payment_methods": {
+        "payment_delete": {
+          "description_without_replacement": "Hierdie betaalmetode sal nie meer beskikbaar wees vir toekomstige aankope vanaf hierdie ligging nie.",
+          "description_with_replacement": "Die uitvee van hierdie betaalmetode sal voorafgemagtigde betalings vir hierdie ligging beïnvloed. Vervang dit met 'n alternatiewe betaalmetode om voort te gaan om komende bestellings te ontvang."
+        },
+        "payment_details": {
+          "order_label": "Bestel {{name}}",
+          "draft_label": "Konsepbestelling {{name}}"
+        }
+      },
+      "purchase_order_number": {
+        "add_accessibility_label": "Voeg PO-nommer by",
+        "add_modal_title": "Voeg PO-nommer by",
+        "cancel": "Kanselleer",
+        "close_modal_accessibility_label": "Maak PO nommer modaal toe",
+        "discard": "Gooi weg",
+        "discard_changes_modal_title": "Gooi veranderinge weg?",
+        "edit_accessibility_label": "Wysig PO-nommer",
+        "edit_modal_title": "Wysig PO-nommer",
+        "empty_state": "Geen PO-nommer nie",
+        "modal_po_number_input_label": "PO nommer",
+        "modal_po_number_input_max_length_error": "PO-nommers het 'n maksimum van {{maxLength}} karakters.",
+        "save": "Stoor",
+        "title": "PO # {{poNumber}}"
       }
     },
-    "editor": {
-      "link_new_tab_confirmation": "Hierdie skakel kan nie binne die redigeerder oopgemaak word nie. Dit sal in 'n nuwe venster oopgemaak word ( {{resolved_to_link}} ). Klik OK om voort te gaan."
-    },
-    "settings": {
-      "title": "Instellings",
-      "loading_accessibility_message": "Laai tans instellingsbladsy",
-      "log_out_everywhere": {
-        "title": "Meld oral af",
-        "description": "As jy 'n toestel verloor het of sekuriteitsbekommernisse het, meld oral af om die sekuriteit van jou rekening te verseker.",
-        "button": "Meld oral af",
-        "warning_message": "Jy sal ook op hierdie toestel afgemeld word."
+    "errors": {
+      "address_deletion_error": {
+        "description": "Kon nie hierdie adres uitvee nie. Probeer weer of verfris die bladsy."
+      },
+      "addresses_loading_issue": {
+        "description": "Verbindingsfout. Gaan jou internetverbinding na en probeer weer."
+      },
+      "banner_title": {
+        "one": "Daar is {{count}} fout",
+        "other": "Daar is {{count}} foute"
+      },
+      "failed_address_creation": {
+        "description": "Kon nie jou adres skep nie. Probeer hierdie bladsy herlaai of gaan jou internetverbinding na."
+      },
+      "failed_address_update": {
+        "description": "Kon nie jou adres opdateer nie. Probeer hierdie bladsy herlaai of gaan jou internetverbinding na."
+      },
+      "load_orders_error": {
+        "title": "Kan nie bestellings laai nie",
+        "description": "Probeer weer of kom later terug.",
+        "retry_button": "Probeer weer"
+      },
+      "load_paypal_error": {
+        "description": "Daar is 'n probleem om PayPal te laai. Probeer asseblief weer."
+      },
+      "logout_everywhere": {
+        "description": "Iets het verkeerd geloop tydens afmeld. Probeer asseblief weer."
+      },
+      "no_access_to_locations": {
+        "description": "Jy het nie toegang tot enige liggings nie"
+      },
+      "not_found": {
+        "description": "Gaan die URL na of probeer weer oor 'n paar minute.",
+        "title": "Daar is 'n probleem om hierdie bladsy te laai"
+      },
+      "order_not_found": {
+        "description": "Hierdie bestelling bestaan ​​nie of jy het nie toestemming om dit te bekyk nie.",
+        "title": "Bestelling nie gevind nie"
+      },
+      "profile_update_error": {
+        "description": "Kon nie jou profiel opdateer nie. Probeer hierdie bladsy herlaai of gaan jou internetverbinding na."
+      },
+      "retry_action_label": "Probeer weer",
+      "load_extension_error": {
+        "title": "Fout",
+        "description": "Herlaai hierdie bladsy of probeer weer oor 'n paar minute.",
+        "refresh_button": "Herlaai bladsy"
       }
+    },
+    "throttle": {
+      "too_many_attempts": {
+        "message": "Te veel pogings",
+        "description": "Probeer asseblief weer oor 'n paar minute"
+      }
+    },
+    "payment_methods": {
+      "title": "Betaalmetodes",
+      "add_payment_method_button": "Voeg betaalmetode by",
+      "add_payment_method_banner": "Voeg betaalmetode by vir vinniger afreken of voorafgoedgekeurde dienste"
     }
   },
   "sections": {
@@ -973,103 +1222,7 @@
       "cancel": "Kanselleer",
       "min_error": "Hierdie item het 'n minimum van {{ min }}",
       "max_error": "Hierdie item het 'n maksimum van {{ max }}",
-      "step_error": "Jy kan hierdie item slegs in inkremente van {{ step }} byvoeg",
-      "product_total": "Produk subtotaal",
-      "view_cart": "Bekyk karretjie",
-      "each": "{{ money }} /ea",
-      "product": "Produk",
-      "variant_total": "Variant totaal",
-      "items_added": {
-        "one": "{{ quantity }} item bygevoeg",
-        "other": "{{ quantity }} items bygevoeg"
-      },
-      "items_removed": {
-        "one": "{{ quantity }} item verwyder",
-        "other": "{{ quantity }} items verwyder"
-      },
-      "product_variants": "Produkvariante"
-    },
-    "announcements": {
-      "previous_announcement": "Vorige aankondiging",
-      "next_announcement": "Volgende aankondiging",
-      "carousel": "Karrousel",
-      "announcement": "Aankondiging",
-      "announcement_bar": "Aankondigingbalk"
-    },
-    "header": {
-      "announcement": "Aankondiging",
-      "menu": "Spyskaart",
-      "cart_count": {
-        "one": "{{ count }} item",
-        "other": "{{ count }} items"
-      }
-    },
-    "cart": {
-      "title": "Jou karretjie",
-      "caption": "Karretjie items",
-      "remove_title": "Verwyder {{ title }}",
-      "estimated_total": "Geskatte totaal",
-      "new_estimated_total": "Nuwe geskatte totaal",
-      "note": "Bestel spesiale instruksies",
-      "checkout": "Check uit",
-      "empty": "Jou mandjie is leeg",
-      "cart_error": "Daar was 'n fout tydens die opdatering van jou mandjie. Probeer asseblief weer.",
-      "cart_quantity_error_html": "Jy kan slegs {{ quantity }} van hierdie item by jou mandjie voeg.",
-      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Pligte en belasting ingesluit. Afslag en <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">versending word</a> by betaalpunt bereken.",
-      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Pligte en belasting ingesluit. Afslag en versending word by betaalpunt bereken.",
-      "taxes_included_shipping_at_checkout_with_policy_html": "Belasting ingesluit. Afslag en <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">versending word</a> by betaalpunt bereken.",
-      "taxes_included_shipping_at_checkout_without_policy": "Belasting ingesluit. Afslag en versending word by betaalpunt bereken.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Pligte ingesluit. Belasting, afslag en <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">versending word</a> by betaalpunt bereken.",
-      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Pligte ingesluit. Belasting, afslag en versending word by betaalpunt bereken.",
-      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Belasting, afslag en <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">versending word</a> by betaalpunt bereken.",
-      "taxes_at_checkout_shipping_at_checkout_without_policy": "Belasting, afslag en versending word by betaalpunt bereken.",
-      "headings": {
-        "product": "Produk",
-        "price": "Prys",
-        "total": "Totaal",
-        "quantity": "Hoeveelheid",
-        "image": "Produk beeld"
-      },
-      "update": "Dateer op",
-      "login": {
-        "title": "Het jy 'n rekening?",
-        "paragraph_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\" class=\"link underlined-link\">Meld aan</a> om vinniger uit te check."
-      }
-    },
-    "footer": {
-      "payment": "Betaalmetodes"
-    },
-    "featured_blog": {
-      "view_all": "Bekyk alles",
-      "onboarding_title": "Blogplasing",
-      "onboarding_content": "Gee jou kliënte 'n opsomming van jou blogplasing"
-    },
-    "featured_collection": {
-      "view_all": "Bekyk alles",
-      "view_all_label": "Bekyk alle produkte in die {{ collection_name }} versameling"
-    },
-    "collection_list": {
-      "view_all": "Bekyk alles"
-    },
-    "collection_template": {
-      "empty": "Geen produkte gevind nie",
-      "title": "Versameling",
-      "use_fewer_filters_html": "Gebruik minder filters of <a class=\"&lt;span class='notranslate'&gt;{{ class }}&lt;/span&gt;\" href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">verwyder almal</a>"
-    },
-    "video": {
-      "load_video": "Laai video: {{ description }}"
-    },
-    "slideshow": {
-      "load_slide": "Laai skyfie",
-      "previous_slideshow": "Vorige skyfie",
-      "next_slideshow": "Volgende skyfie",
-      "pause_slideshow": "Onderbreek skyfievertoning",
-      "play_slideshow": "Speel skyfievertoning",
-      "carousel": "Karrousel",
-      "slide": "Skyfie"
-    },
-    "page": {
-      "title": "Bladsy titel"
+      "step_error": "Jy kan hierdie item slegs in inkremente van {{ step }} byvoeg"
     }
   },
   "general": {
