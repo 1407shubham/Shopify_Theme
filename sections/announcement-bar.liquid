@@ -39,6 +39,10 @@
               class="announcement-bar__link link link--text focus-inset animate-arrow"
             >
           {%- endif -%}
+              {% if section.settings.show_icon %}
+                <span class="announcement-bar__icon">
+                  {% render 'bell-icon' %}  </span>
+              {% endif %}
           <p class="announcement-bar__message h5">
             <span>{{ section.blocks.first.settings.text | escape }}</span>
             {%- if section.blocks.first.settings.link != blank -%}
