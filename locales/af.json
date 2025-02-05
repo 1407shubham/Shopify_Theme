@@ -1339,8 +1339,152 @@
         "load_video": "Speel video {{ index }} in galery-aansig",
         "image_available": "Prent {{ index }} is nou beskikbaar in galery-aansig",
         "open_media": "Maak media {{ index }} in modaal oop",
-        "play_model": "Speel 3D Viewer"
+        "play_model": "Speel 3D Viewer",
+        "play_video": "Speel video"
+      },
+      "quantity": {
+        "label": "Hoeveelheid",
+        "input_label": "Hoeveelheid vir {{ product }}",
+        "increase": "Verhoog hoeveelheid vir {{ product }}",
+        "decrease": "Verminder hoeveelheid vir {{ product }}",
+        "minimum_of": "Minimum van {{ quantity }}",
+        "maximum_of": "Maksimum van {{ quantity }}",
+        "multiples_of": "Inkremente van {{ quantity }}",
+        "min_of": "Min {{ quantity }}",
+        "max_of": "Maksimum {{ quantity }}",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> in die mandjie",
+        "note": "Bekyk hoeveelheid reëls"
+      },
+      "volume_pricing": {
+        "title": "Volume Pryse",
+        "note": "Volume pryse beskikbaar",
+        "minimum": "{{ quantity }} +",
+        "price_at_each": "teen {{ price }} /ea"
+      },
+      "pickup_availability": {
+        "view_store_info": "Bekyk winkelinligting",
+        "check_other_stores": "Gaan beskikbaarheid by ander winkels na",
+        "pick_up_available": "Bakkie beskikbaar",
+        "pick_up_available_at_html": "Afhaal beskikbaar by <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "Afhaal tans nie beskikbaar by <span class=\"color-foreground\">{{ location_name }}</span>",
+        "unavailable": "Kon nie bakkie beskikbaarheid laai nie",
+        "refresh": "Verfris"
+      },
+      "price": {
+        "from_price_html": "Vanaf {{ price }}",
+        "regular_price": "Gereelde prys",
+        "sale_price": "Verkoop prys",
+        "unit_price": "Eenheidsprys"
+      },
+      "share": "Deel hierdie produk",
+      "sold_out": "Uitverkoop",
+      "unavailable": "Onbeskikbaar",
+      "vendor": "Verkoper",
+      "value_unavailable": "{{ option_value }} - Onbeskikbaar",
+      "variant_sold_out_or_unavailable": "Variant uitverkoop of nie beskikbaar nie",
+      "video_exit_message": "{{ title }} maak volskermvideo in dieselfde venster oop.",
+      "view_full_details": "Bekyk volledige besonderhede",
+      "xr_button": "Kyk in jou spasie",
+      "xr_button_label": "Kyk in jou spasie, laai item in augmented reality-venster",
+      "taxes_included": "Belasting ingesluit.",
+      "duties_included": "Pligte ingesluit.",
+      "duties_and_taxes_included": "Pligte en belasting ingesluit.",
+      "shipping_policy_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">Versending word</a> by betaalpunt bereken."
+    },
+    "modal": {
+      "label": "Mediagalery"
+    },
+    "facets": {
+      "filter_and_operator_subtitle": "Pas almal by",
+      "apply": "Doen aansoek",
+      "clear": "Duidelik",
+      "clear_all": "Verwyder alles",
+      "from": "Van",
+      "filter_and_sort": "Filter en sorteer",
+      "filters_selected": {
+        "one": "{{ count }} gekies",
+        "other": "{{ count }} gekies"
+      },
+      "filter_selected_accessibility": "{{ type }} ( {{ count }} filters gekies)",
+      "show_more": "Wys meer",
+      "show_less": "Wys minder",
+      "max_price": "Die hoogste prys is {{ price }}",
+      "product_count": {
+        "one": "{{ product_count }} van {{ count }} produk",
+        "other": "{{ product_count }} van {{ count }} produkte"
+      },
+      "product_count_simple": {
+        "one": "{{ count }} produk",
+        "other": "{{ count }} produkte"
+      },
+      "reset": "Stel terug",
+      "sort_button": "Sorteer",
+      "sort_by_label": "Sorteer volgens:",
+      "to": "Om",
+      "clear_filter": "Verwyder filter"
+    }
+  },
+  "templates": {
+    "search": {
+      "no_results": "Geen resultate gevind vir \" {{ terms }} \". Kontroleer die spelling of gebruik 'n ander woord of frase.",
+      "page": "Bladsy",
+      "products": "Produkte",
+      "results_pages_with_count": {
+        "one": "{{ count }} bladsy",
+        "other": "{{ count }} bladsye"
+      },
+      "results_suggestions_with_count": {
+        "one": "{{ count }} voorstel",
+        "other": "{{ count }} voorstelle"
+      },
+      "results_products_with_count": {
+        "one": "{{ count }} produk",
+        "other": "{{ count }} produkte"
+      },
+      "results_with_count": {
+        "one": "{{ count }} resultaat",
+        "other": "{{ count }} resultate"
+      },
+      "results_with_count_and_term": {
+        "one": "{{ count }} resultaat gevind vir \" {{ terms }} \"",
+        "other": "{{ count }} resultate gevind vir \" {{ terms }} \""
+      },
+      "title": "Soekresultate",
+      "search_for": "Soek vir \" {{ terms }} \"",
+      "suggestions": "Voorstelle",
+      "pages": "Bladsye"
+    },
+    "cart": {
+      "cart": "Karretjie"
+    },
+    "contact": {
+      "form": {
+        "title": "Kontakvorm",
+        "name": "Naam",
+        "email": "E-pos",
+        "phone": "Telefoonnommer",
+        "comment": "Lewer kommentaar",
+        "send": "Stuur",
+        "post_success": "Dankie dat jy ons gekontak het. Ons sal so gou moontlik na jou terugkom.",
+        "error_heading": "Pas asseblief die volgende aan:"
       }
+    },
+    "404": {
+      "title": "Bladsy nie gevind nie"
+    }
+  },
+  "localization": {
+    "country_label": "Land/streek",
+    "language_label": "Taal",
+    "update_language": "Dateer taal op",
+    "update_country": "Dateer land/streek op",
+    "search": "Soek",
+    "popular_countries_regions": "Gewilde lande/streke",
+    "country_results_count": "{{ count }} lande/streke gevind"
+  },
+  "customer": {
+    "account": {
+      "title": "Rekening"
     }
   }
 }
