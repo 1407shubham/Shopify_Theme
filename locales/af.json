@@ -1997,7 +1997,8 @@
     "email_marketing": {
       "open_tracking": {
         "no_longer_track": {
-          "privacy_policy": "Nadat hierdie e-pos gestuur is, het ons ons privaatheidsbeleid opgedateer en ons spoor nie meer oop nie."
+          "privacy_policy": "Nadat hierdie e-pos gestuur is, het ons ons privaatheidsbeleid opgedateer en ons spoor nie meer oop nie.",
+          "status_html": "<b>Ons hou nie meer enige e-pos oop nie.</b>"
         },
         "track": {
           "status_html": "<b>E-pos oopopsporing word aangemeld.</b>",
@@ -2007,7 +2008,29 @@
           "status_html": "<b>E-pos oopopsporing word aangemeld.</b>",
           "visibility": "Ons het ons beleid opgedateer, en spoor-e-posse word nou oopgemaak. E-pos oop tariewe sal anoniem gerapporteer word. Ons sal net sien of jy 'n e-pos oopgemaak het as deel van die totale e-pos oopmaakkoers.",
           "opt_out_html": "As jy nie hierdie inligting wil deel nie, kan jy <a style=\"text-decoration:underline;\" href=\"%{link}\">uitteken.</a>"
+        },
+        "opt_in": {
+          "opted_in_html": "<b>Jy het intekening aanvaar vir e-pos oopnasporing.</b>",
+          "visibility": "E-pos oop tariewe sal anoniem gerapporteer word. Ons sal net sien of jy 'n e-pos oopgemaak het as deel van 'n saamgevoegde e-pos oopmaakkoers.",
+          "opt_out_html": "Jy kan <a style=\"text-decoration:underline;\" href=\"%{link}\">onttrek</a> van e-pos oopnasporing as jy nie hierdie inligting wil deel nie.",
+          "preview_bar": "Jy is besig om 'n voorskou te maak van wat klante sal sien wanneer hulle inteken vir oopnasporing per e-pos."
+        },
+        "opt_out": {
+          "opted_out_html": "<b>Jy het onttrek van e-pos oopnasporing.</b>",
+          "visibility": "Ons sal nie sien of jy ons e-posse oopgemaak het nie.",
+          "opt_in_html": "<a style=\"text-decoration:underline;\" href=\"%{link}\">Teken in</a> op e-pos oopnasporing.",
+          "preview_bar": "Jy kyk na wat klante sal sien wanneer hulle onttrek van e-pos-opsporing."
         }
+      },
+      "subscribed": {
+        "confirmation": "Dankie dat jy op ons poslys ingeteken het.",
+        "disclaimer": "Jy kan enige tyd uitteken.",
+        "unsubscribe": "Teken uit"
+      },
+      "unsubscribed": {
+        "confirmation": "Jy het van ons poslys uitgeteken.",
+        "disclaimer": "Jy sal nie meer bemarkingsopdaterings van ons ontvang nie. Jy kan enige tyd weer inteken.",
+        "preview": "Jy kyk na wat kliënte sal sien wanneer hulle uitteken."
       }
     },
     "filters": {
@@ -2198,8 +2221,125 @@
             "header": "Maak 'n nuwe Shopify-winkel oop",
             "caption": "Begin 'n gratis proeftydperk van 3 dae en gaan dan voort vir $1 per maand vir die volgende 3 maande.",
             "link_text": "Teken nou in"
+          },
+          "editions": {
+            "header": "Kyk na Shopify Editions",
+            "caption": "Met 100+ produkopdaterings kan jy meer produktief en kreatief wees, en kragtiger in die handel as wat jy ooit gedink het.",
+            "link_text": "Verken nuutste uitgawes"
+          },
+          "store_owner": {
+            "header": "Is jy die winkeleienaar?",
+            "caption": "Sukkel jy om by jou winkel in te kom? Probeer die %{forgot_your_store_link}-kenmerk. As jy jou winkel wil heraktiveer, kontak %{shopify_support_link}.",
+            "shopify_support_link_text": "Shopify-ondersteuning"
           }
         }
+      }
+    },
+    "notices": {
+      "customer": {
+        "password_reset_error": "Fout om wagwoord terug te stel",
+        "no_account_found": "Geen rekening gevind met daardie e-pos nie.",
+        "invalid_credentials": "Verkeerde e-pos of wagwoord.",
+        "denylisted_reset_password": "Daar kon nie toegang tot jou rekening verkry word nie omdat die huidige wagwoord nie veilig is nie. Jy sal 'n e-pos ontvang om jou wagwoord op te dateer.",
+        "signup_disabled": "Kliëntrekeningskepping is gedeaktiveer."
+      },
+      "address": {
+        "updated": "Adres suksesvol opgedateer.",
+        "error_updating": "Kon nie adres opdateer nie",
+        "created": "Adres suksesvol geskep",
+        "error_creating": "Kon nie adres skep nie.",
+        "deleted": "Adres suksesvol uitgevee",
+        "error_deleting": "Kon nie adres uitvee nie."
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "Bygevoeg %{delta}",
+          "increment_item": "Bygevoeg %{delta}",
+          "decrement_item": "Het %{delta} van %{total} verwyder",
+          "decrement_fulfilled_line_item": "Het %{delta} van %{total} teruggegee",
+          "decrement_return_line_item": "Het %{delta} van terugkeer verwyder"
+        }
+      },
+      "order": {
+        "not_available": "Hierdie bestelling is nie beskikbaar nie",
+        "financial_status": {
+          "authorized": "Gemagtig",
+          "pending": "Hangende",
+          "paid": "Betaal",
+          "unpaid": "Onbetaald",
+          "voided": "Nietig verklaar",
+          "partially_paid": "Gedeeltelik betaal",
+          "partially_refunded": "Gedeeltelik terugbetaal",
+          "refunded": "Terugbetaal",
+          "expired": "Verval"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Vervul",
+          "complete": "Voltooi",
+          "partial": "Gedeeltelik",
+          "unfulfilled": "Onvervuld",
+          "restocked": "Hervoorraad"
+        },
+        "transaction_status": {
+          "success": "Sukses",
+          "pending": "Hangende",
+          "failure": "Mislukking",
+          "error": "Fout"
+        },
+        "cancel_reason": {
+          "declined": "Betaling geweier",
+          "inventory": "Items nie beskikbaar nie",
+          "fraud": "Bedrieglike bestelling",
+          "customer": "Kliënt het bestelling verander/gekanselleer",
+          "staff": "Personeel fout",
+          "other": "Ander"
+        },
+        "cash_on_delivery": "Kontant by aflewering (COD)"
+      },
+      "cart": {
+        "only_n_items_available": "Jy kan net %{count} %{name} by die mandjie voeg.",
+        "too_many_items_in_cart": "Jy kan nie meer %{name} by die mandjie voeg nie.",
+        "less_than_minimum": "Hierdie item het 'n minimum van %{min}.",
+        "more_than_maximum": "Hierdie item het 'n maksimum van %{max}.",
+        "not_respect_step": "Jy kan hierdie item slegs in inkremente van %{step} byvoeg.",
+        "all_items_in_cart": "Alle %{count} %{name} is in jou mandjie.",
+        "empty_update": "kan nie leë mandjie opdateer nie",
+        "missing_parameters": "geen geldige ID of lynparameter nie",
+        "generic_error": "Karfout",
+        "invalid_input": "%{parameter} parameter is ongeldig.",
+        "product_not_available": "Produk is nie beskikbaar nie",
+        "too_many_line_items_error": "Jou mandjie kan nie meer as %{max} items bevat nie.",
+        "link_expired": "Skakel het verval",
+        "link_no_longer_exists": "Skakel bestaan ​​nie meer nie.",
+        "stock_problems_html": "Een of meer items is nie meer beskikbaar nie. Ons het 'n <a href=\"%{link}\">opgedateerde mandjie</a> verskaf.",
+        "changed": "Karretjie verander",
+        "items_changed": "Een of meer items het verander.",
+        "product_sold_out": "Die produk '%{name}' is reeds uitverkoop.",
+        "variant_not_found": "Kan nie variant vind nie",
+        "variant_requires_selling_plan": "Variant kan slegs met 'n verkoopsplan gekoop word.",
+        "selling_plan_not_available_for_company_locations": "Slegs eenmalige aankoop is beskikbaar vir B2B-bestellings",
+        "digital_product_not_available_for_company_locations": "Hierdie item kan nie by 'n B2B-bestelling gevoeg word nie",
+        "selling_plan_not_applicable": "Kan nie verkoopplan op variant toepas nie",
+        "shipping_address_not_required": "Hierdie mandjie benodig nie versending nie",
+        "shipping_address_invalid": "Daar was 'n probleem met die berekening van jou afleweringstariewe. Gaan voort na die betaalpunt om 'n afleweringskoers te kies voordat jy jou bestelling voltooi.",
+        "bundle_requires_components": "Die bondelproduk '%{name}' kan nie by die mandjie gevoeg word nie.",
+        "gift_card_with_components_not_supported": "Die bondelproduk '%{name}' kan nie by die mandjie gevoeg word nie.",
+        "gift_card_price_must_be_greater_than_zero": "Die bondelproduk '%{name}' kan nie by die mandjie gevoeg word nie.",
+        "gift_card_recipient_validation_error": "Die gespesifiseerde geskenkbewys ontvanger is ongeldig",
+        "view_lines_limit_reached": "Lyne moet minder as %{limit} wees",
+        "cart_too_large": "Karretjie is te groot.",
+        "merchandise_line_transformers": {
+          "run_error": "'n Fout het in jou mandjie voorgekom."
+        }
+      },
+      "storefront": {
+        "invalid_password": "Wagwoord verkeerd, probeer asseblief weer."
+      },
+      "tags": {
+        "add_articles": "Beperk soektog na artikels wat ook 'n merker %{tag} het",
+        "add_products": "Beperk seleksie tot produkte wat ooreenstem met merker %{tag}",
+        "remove_articles": "Brei soektog uit na artikels wat nie %{tag} gemerk is nie",
+        "remove_products": "Verwyder merker %{tag}"
       }
     }
   },
