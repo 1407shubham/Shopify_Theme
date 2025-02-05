@@ -784,7 +784,85 @@
         "discount_discovery": {
           "add_code": "Voeg afslag by"
         },
-        "alternative_payment_currency_total": "Gehef as %{amount_due}"
+        "alternative_payment_currency_total": "Gehef as %{amount_due}",
+        "title": "Opsomming van bestelling",
+        "group_title_label": "Deel van \"%{group_title}\"",
+        "view_all_items": {
+          "one": "Bekyk %{count} item",
+          "other": "Bekyk alle %{count} items"
+        },
+        "more_items_modal": {
+          "search_item": "Soek",
+          "clear_search": "Vee soektog uit",
+          "empty_results": "Geen resultate gevind vir \"%{searchText}\" nie. Kontroleer die spelling of gebruik 'n ander woord of frase.",
+          "number_items_shown": "%{shownNumber} van %{totalNumber} items"
+        },
+        "order_name_label": "Bestelling %{name}",
+        "shopping_cart_label": "Inkopiemandjie",
+        "discount_title": "Afslag",
+        "discount_title_stacking": {
+          "one": "Afslag",
+          "other": "Afslag"
+        },
+        "discount_order_stacking": {
+          "one": "Bestel afslag",
+          "other": "Bestel afslag"
+        },
+        "discount_label": "Afslag kode",
+        "discount_not_found": "Kan nie 'n geldige afslag vind wat ooreenstem met die kode wat ingevoer is nie",
+        "discount_placeholder": "Afslag kode",
+        "discount_code_applied": "Afslagkode toegepas",
+        "gift_card_applied": "Geskenkbewys toegepas",
+        "enter_shipping_address": "Voer versendingsadres in",
+        "gift_card_title": "Geskenkbewys",
+        "gift_card_label": "Geskenkbewys",
+        "gift_card_placeholder": "Geskenkbewys",
+        "gift_card_and_discount_title": "Afslagkode of geskenkbewys",
+        "gift_card_and_discount_label": "Afslagkode of geskenkbewys",
+        "gift_card_and_discount_placeholder": "Afslagkode of geskenkbewys",
+        "remove_gift_card_label": "Duidelike geskenkbewys",
+        "remove_discount_label": "Verwyder afslag",
+        "return_restocking_fee_label": "Hervoorraadfooi",
+        "return_shipping_fee_label": "Retourversending",
+        "free_shipping_discount_label": "Gratis versending",
+        "applied_free_shipping_discount_label": "Toegepas",
+        "apply_discount_button_label": "Doen aansoek",
+        "applied_discount_message": "%{amount} afslag op totale bestelprys",
+        "discount_has_been_applied": "Afslag is toegepas",
+        "discount_has_been_removed": "Afslag is verwyder",
+        "gift_card_has_been_applied": "Geskenkbewys is toegepas",
+        "gift_card_has_been_removed": "Geskenkbewys is verwyder",
+        "gift_card_subscriptions_notice": "Geskenkbewyse sal slegs van toepassing wees op jou eerste betaling",
+        "discount_already_applied": "'n Afslag is op hierdie bestelling toegepas. Jy kan nie nog 'n afslag byvoeg nie.",
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> afslagkode is nie geldig vir die items in jou mandjie nie",
+        "discount_requires_customer_notice": "Voer jou afleweringsinligting in om die <strong style=\"text-transform:uppercase\">%{code}</strong> -afslagkode toe te pas",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> afslagkode is nie tans vir jou beskikbaar nie",
+        "eligible_customer_missing_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> afslagkode vereis kwalifiserende klant",
+        "shipping_information_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> afslagkode is nie vir jou afleweringsadres beskikbaar nie",
+        "customer_already_used_once_per_customer_discount_notice": "Die <strong style=\"text-transform:uppercase\">%{code}</strong> afslagkode is reeds gebruik",
+        "subtotal_label": "Subtotaal",
+        "subtotal_label_with_quantity": {
+          "one": "Subtotaal · %{count} item",
+          "other": "Subtotaal · %{count} items"
+        },
+        "shipping_label": "Versending",
+        "pickup_label": "Afhaal in winkel",
+        "no_pickup_location": "Daar is geen optelplekke beskikbaar nie.",
+        "tip_label": "Wenk",
+        "calculating_shipping": "Bereken tans …",
+        "calculating": "Bereken tans …",
+        "shipping_default_value": "Bereken by volgende stap",
+        "shipping_discount_title": "Gestuurafslag",
+        "shipping_pending_message": "Nog nie beskikbaar nie",
+        "shipping_policy_link": "Gestuurkoste",
+        "taxes_label": "Belasting",
+        "estimated_taxes_label": "Geskatte belasting",
+        "information_estimated_taxes_label": "Belasting (beraam)",
+        "estimated_taxes_finalization_tooltip_content": "Die finale belasting en totaal sal per e-pos of sms bevestig word nadat jy jou bestelling geplaas het.",
+        "order_total_label": "Bestelling totaal",
+        "price_before_discount_aria_text": "Oorspronklike prys",
+        "price_after_discount_aria_text": "Afslagprys",
+        "discount_code_aria_text": "Afslag kode"
       },
       "shipping": {
         "title": "Versending",
@@ -1056,7 +1134,16 @@
           "status_column_header": "Geen aflewering nie"
         },
         "price_update": {
-          "title": "Prys opdatering"
+          "title": "Prys opdatering",
+          "description": "Pryse vir hierdie items het verander en word in jou mandjie opgedateer."
+        },
+        "price_and_quantity_update": {
+          "title": "Prys en hoeveelheid opdatering",
+          "description": "Pryse en beskikbare hoeveelhede vir hierdie items het verander en word in jou mandjie opgedateer."
+        },
+        "out_of_stock": {
+          "description": "Hierdie items is nie meer beskikbaar nie en is uit jou mandjie verwyder.",
+          "items_unavailable": "Sommige items is nie meer beskikbaar nie en is uit jou mandjie verwyder."
         }
       },
       "vaulted": {
@@ -1514,6 +1601,52 @@
         "location_billing_address_label": "Ligging faktuur adres",
         "fact_billing_address_label": "Faktuuradres",
         "location_shipping_address_label": "Ligging gestuur adres"
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "Onbeskikbare produk",
+          "other": "Onbeskikbare produkte"
+        },
+        "products_not_available": {
+          "one": "Hierdie produk sal uit jou mandjie verwyder word omdat dit nie in jou land/streek beskikbaar is nie.",
+          "other": "Hierdie produkte sal uit jou mandjie verwyder word omdat hulle nie in jou land/streek beskikbaar is nie."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "Hierdie produk is nie in jou land/streek beskikbaar nie.",
+          "other": "Hierdie produkte is nie in jou land/streek beskikbaar nie."
+        },
+        "unavailable_label": "Onbeskikbaar"
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "Hierdie produk is nie beskikbaar vir aflewering aan %{location_name} nie.",
+          "some_products_other": "Hierdie produkte is nie beskikbaar vir aflewering aan %{location_name} nie.",
+          "all_products_one": "Die produk in jou mandjie is nie beskikbaar vir aflewering aan %{location_name} nie.",
+          "all_products_other": "Die produkte in jou mandjie is nie beskikbaar vir aflewering aan %{location_name} nie."
+        },
+        "missing_country_fallback": "jou land",
+        "indeterminate_location_fallback": "jou ligging",
+        "cart_updated": "Jou mandjie is opgedateer.",
+        "change_address_only": "Verander afleweringsadres om voort te gaan.",
+        "change_address_or_remove": "Verander afleweringsadres of %{remove_action}.",
+        "remove_items_action": {
+          "one": "verwyder onbeskikbare item",
+          "other": "verwyder onbeskikbare items"
+        },
+        "empty_cart_action": "leë wa en keer terug na die winkel"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "Geen aflewering beskikbaar vir %{count} item nie",
+            "other": "Geen aflewering beskikbaar vir %{count} items nie"
+          },
+          "message": {
+            "one": "Hierdie item sal uit jou mandjie verwyder word omdat daar geen afleweringsmetodes vir jou adres beskikbaar is nie.",
+            "other": "Hierdie items sal uit jou mandjie verwyder word omdat daar geen afleweringsmetodes vir jou adres beskikbaar is nie."
+          },
+          "label": "Geen aflewering nie"
+        }
       }
     },
     "email_marketing": {
