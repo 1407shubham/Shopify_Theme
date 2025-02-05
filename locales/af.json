@@ -780,7 +780,13 @@
         "generic_processing_error": {
           "title": "Daar was 'n probleem met die verwerking van jou bestelling",
           "body": "Jy is nie aangekla nie. Probeer weer of gebruik 'n ander betaalmetode."
-        }
+        },
+        "return_to_cart_link_text": "Keer terug na kar",
+        "return_to_cart_to_update_quantities": "%{return_to_cart_link_text} om die hoeveelhede op te dateer",
+        "subscription_changed": "Een van jou intekeninge het verander.",
+        "company_location_changed": "Jou mandjie is opgedateer. Hersien jou bestelling voordat jy dit indien.",
+        "company_location_changed_product_removed": "Jou mandjie is opgedateer omdat sommige produkte nie by hierdie ligging beskikbaar is nie. Hersien jou bestelling voordat jy dit indien.",
+        "violations_title": "{{violation}} ontbreek of ongeldig"
       },
       "marketplaces": {
         "legal_notice": {
@@ -1537,7 +1543,10 @@
         "description": "Wys jou ondersteuning vir die span by %{shop_name}",
         "presets_description": "Kies 'n fooipersentasie",
         "custom_label": "Pasgemaakte wenk",
-        "add_tip": "Voeg wenk by"
+        "add_tip": "Voeg wenk by",
+        "update_tip": "Dateer wenk op",
+        "message": "Dankie, ons waardeer dit.",
+        "no_tip_label": "Geen"
       },
       "billing": {
         "edit": "Wysig",
@@ -1991,6 +2000,169 @@
       "localized_fields": {
         "additional_information": {
           "title": "Bykomende inligting"
+        }
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "Koop %{product_name}",
+          "one": "Koop %{product_name} en %{count} ander item",
+          "other": "Koop %{product_name} en %{count} ander items"
+        }
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "day": {
+            "one": "dag",
+            "other": "%{count} dae"
+          },
+          "week": {
+            "other": "%{count} weke"
+          },
+          "month": {
+            "one": "maand",
+            "other": "%{count} maande"
+          },
+          "year": {
+            "one": "jaar",
+            "other": "%{count} jaar"
+          }
+        },
+        "recurring_totals": "%{total_price} elke %{interval}",
+        "recurring_totals_with_initial_order_shipping_discount": "Eerste betaling %{total_price_with_discount}, dan %{recurring_total}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "Eerste betaling %{total_price}",
+            "other": "Eerste %{count} betalings %{total_price} elk"
+          },
+          "following_cycles": ", dan %{total_price} elke %{interval}"
+        },
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", dan %{count} betaling teen %{total_price}",
+            "other": ", dan %{count} betalings teen %{total_price} elk"
+          }
+        }
+      },
+      "customer_payment_methods": {
+        "page_title": "Betaalmetodes",
+        "title": "Betaalmetodes",
+        "update_card_button_label": "Dateer kaart op",
+        "delete_customer_mandate": {
+          "generic_error": "Daar was 'n probleem met die verwerking van jou versoek.",
+          "success_message": "Jou betaalmetode is suksesvol uitgevee"
+        }
+      },
+      "throttle": {
+        "too_many_attempts": {
+          "message": "Te veel pogings",
+          "description": "Probeer asseblief weer oor 'n paar minute"
+        },
+        "line_to_check_out": "Jy staan ​​in die ry om uit te check",
+        "cart_summary_heading": "Jou karretjie",
+        "merchandise": {
+          "available": "Beskikbaar",
+          "sold_out": "Uitverkoop"
+        },
+        "inventory": {
+          "partial_inventory_banner": "'n Deel van jou mandjie is uitverkoop en sal nie by die betaalpunt gekoop kan word nie.",
+          "sold_out": {
+            "heading": "Jou mandjie is uitverkoop",
+            "storefront_body": "Gaan terug na die winkel om voort te gaan inkopies doen",
+            "no_storefront_body": "Ongelukkig is die item wat jy wil koop nie meer beskikbaar nie.",
+            "link": "Terug winkel toe"
+          }
+        },
+        "title": "Tou",
+        "time_to_checkout_title": "Tyd om af te betaal - {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "Bereken geskatte wagtyd",
+          "less_than_one": "Geskatte wagtyd: Minder as 'n minuut",
+          "one": "Geskatte wagtyd: {{count}} minuut",
+          "other": "Geskatte wagtyd: {{count}} minute"
+        },
+        "last_checked": "(Laas nagegaan: {{time}} )",
+        "footer": {
+          "heading": "Moenie hierdie bladsy herlaai nie, dit sal outomaties opdateer.",
+          "body": "Items in jou mandjie word nie gereserveer totdat jy betaal het nie."
+        }
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "Daar was 'n probleem met die verwerking van jou versoek. Kontak asseblief die winkeleienaar."
+      },
+      "no_address_location": {
+        "title": "Ligging sonder adres",
+        "header": "Jy het nie 'n afleweringsadres vir hierdie ligging nie",
+        "alt_header": "Versendingsadres ontbreek",
+        "message": "Kontak ons ​​om 'n adres vir hierdie ligging by te voeg om afhandeling te voltooi.",
+        "email_us_button_label": "Stuur vir ons 'n e-pos"
+      },
+      "order_errors": {
+        "creation_failure": "Daar was 'n probleem met die skep van jou bestelling. Probeer weer, of kontak ons ​​vir meer besonderhede.",
+        "network_failure": "Jou bestelling kon nie ingedien word nie weens 'n netwerkfout. Gaan jou verbinding na en probeer weer.",
+        "inventory_reservation_failure": "Sommige items is nie meer beskikbaar nie."
+      },
+      "session_errors": {
+        "session_not_unique": "Daar was 'n probleem met die verwerking van jou bestelling. Herlaai hierdie bladsy om terug te keer na die winkel.",
+        "session_already_finished": "Hierdie bestelling is reeds ingedien. U kan na die winkel terugkeer om 'n nuwe bestelling te begin."
+      },
+      "artifact_errors": {
+        "artifact_dissatisfaction_without_violation": "Daar was 'n probleem met die verwerking van jou bestelling. Probeer weer oor 'n paar minute."
+      },
+      "pickup_point": {
+        "location_is_currently_closed": "Gesluit",
+        "business_hours": "Openingstye",
+        "no_business_hours": "Geen openingstye beskikbaar nie",
+        "open_twenty_four_hours": "Oop 24/7",
+        "title": "Optelpunt",
+        "or": "of",
+        "search_button": "Soek",
+        "address_label": "Adres",
+        "selector_tabs": "Optelpunt keurder",
+        "selector_tab_map": "Kaart",
+        "selector_tab_list": "Lys",
+        "could_not_resolve_address": "Jou adres kon nie opgespoor word nie. Probeer weer of gebruik 'n ander adres",
+        "no_pickup_points_near_you": "Geen afhaalpunte naby die geselekteerde adres gevind nie",
+        "no_pickup_points_near_location": "Geen optelpunte naby jou ligging gevind nie",
+        "no_pickup_points_found": "Geen afhaalpunte gevind nie",
+        "paginator": {
+          "next_accessibility_label": "Volgende bladsy",
+          "previous_accessibility_label": "Vorige bladsy",
+          "header": {
+            "one": "Wys tans %{first} - %{last} van %{count} punt",
+            "other": "Wys tans %{first} - %{last} van %{count} punte"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{pickup_point_index} van %{count} punt",
+            "other": "%{pickup_point_index} van %{count} punte"
+          },
+          "selected_page": {
+            "one": "%{first} - %{laaste} van %{count} punt",
+            "other": "%{first} - %{laaste} van %{count} punte"
+          }
+        },
+        "number_of_pickup_points_near_location": {
+          "one": "%{count} afhaalpunt naby jou ligging",
+          "other": "%{count} afhaalpunte naby jou ligging"
+        },
+        "change": "Verander",
+        "waiting_on_pickup_point_location_notice": "Soek tans vir afhaalpunte...",
+        "geolocation": {
+          "shared_location_button": "Gebruik my ligging",
+          "errors": {
+            "unsuported_by_browser": "Om geoligging te kry word nie deur jou blaaier ondersteun nie. Probeer weer of gebruik 'n ander blaaier.",
+            "permission_not_allowed": "Laat die deel van jou ligging toe.",
+            "permission_denied": "Kon nie jou ligging kry nie. Probeer weer."
+          }
+        }
+      },
+      "error_page": {
+        "terminal": {
+          "title": "Daar was 'n probleem met ons betaalpunt",
+          "message": "Herlaai hierdie bladsy of probeer weer oor 'n paar minute",
+          "action": {
+            "cta": "Herlaai bladsy"
+          },
+          "request_id": "Versoek-ID: {{requestId}}"
         }
       }
     },
