@@ -165,7 +165,22 @@
     </div>
   </div>
 </div>
-
+{
+  "name": "Announcement Bar",
+  "settings": [
+    {
+      "id": "announcement_text",
+      "type": "richtext",
+      "label": "Announcement text"
+    },
+    {
+      "id": "show_icon",
+      "type": "checkbox",
+      "label": "Show icon",
+      "default": true
+    }
+  ]
+}
 {% schema %}
 {
   "name": "t:sections.announcement-bar.name",
@@ -180,6 +195,12 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-4"
+    },
+    {
+      "id": "show_icon",
+      "type": "checkbox",
+      "label": "Show icon",
+      "default": true
     },
     {
       "type": "checkbox",
