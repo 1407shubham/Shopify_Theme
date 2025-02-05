@@ -689,8 +689,11 @@
           },
           "formatting": {
             "name_contains_emojis": "Vee emoji uit jou naam uit",
-            "postal_code_contains_emoji": "Vee emoji uit jou poskode uit"
-          }
+            "postal_code_contains_emoji": "Vee emoji uit jou poskode uit",
+            "first_name_too_long": "Voornaam bevat te veel letters",
+            "last_name_too_long": "Van bevat te veel letters"
+          },
+          "select_different_shipping_address_to_resolve_errors": "Jou afleweringsadres is ongeldig. Kies 'n ander adres of gebruik 'n nuwe een."
         }
       },
       "order_summary": {
@@ -1647,6 +1650,18 @@
           },
           "label": "Geen aflewering nie"
         }
+      },
+      "note": {
+        "length_exceeds_maximum": "Verminder die grootte van die nota tot 5000 of minder karakters."
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "Geskenkbewysprys moet groter as 0 wees.",
+            "gift_card_price_must_not_exceed_limit": "Geskenkbewysprys mag nie %{gift_card_limit} oorskry nie.",
+            "subtotal_limit_reached": "Die maksimum waarde van lynitems is bereik."
+          }
+        }
       }
     },
     "email_marketing": {
@@ -1735,6 +1750,127 @@
       "buyer_consent_product": "Hierdie item is 'n herhalende of uitgestelde aankoop. Deur voort te gaan, stem ek in tot die %{cancellationPolicyLink} en magtig ek jou om my betaalmetode te hef teen die pryse, frekwensie en datums wat op hierdie bladsy gelys word totdat my bestelling vervul is of ek kanselleer, indien toegelaat.",
       "buyer_consent_cart": "Een of meer van die items in jou mandjie is 'n herhalende of uitgestelde aankoop. Deur voort te gaan, stem ek in tot die %{cancellationPolicyLink} en magtig ek jou om my betaalmetode te hef teen die pryse, frekwensie en datums wat op hierdie bladsy gelys word totdat my bestelling vervul is of ek kanselleer, indien toegelaat.",
       "cancellation_policy": "kansellasiebeleid"
+    },
+    "pagination": {
+      "previous": "Vorige",
+      "next": "Volgende"
+    },
+    "links": {
+      "powered_by_shopify": "Aangedryf deur Shopify",
+      "learn_more": "Kom meer te wete"
+    },
+    "feed": {
+      "more": "Meer"
+    },
+    "attributes": {
+      "email": "e-pos",
+      "password": "wagwoord",
+      "password_confirmation": "Die wagwoord bevestiging",
+      "first_name": "voornaam",
+      "last_name": "van",
+      "body": "liggaam",
+      "signature": "Adres"
+    },
+    "addresses": {
+      "zip_code": "Poskode",
+      "postal_code": "Poskode",
+      "postcode": "Poskode",
+      "pincode": "Pinkode",
+      "region": "Streek",
+      "prefecture": "Prefektuur",
+      "province": "Provinsie",
+      "state": "Staat",
+      "state_and_territory": "Staat/gebied",
+      "emirate": "Emiraat",
+      "governorate": "Goewerneur",
+      "confirm": "Is jy seker jy wil hierdie adres uitvee?"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "Uitgestalte",
+        "best_selling": "Beste verkoop",
+        "az": "Alfabeties, AZ",
+        "za": "Alfabeties, ZA",
+        "price_ascending": "Prys, laag tot hoog",
+        "price_descending": "Prys, hoog tot laag",
+        "date_ascending": "Datum, oud tot nuut",
+        "date_descending": "Datum, nuut tot oud"
+      }
+    },
+    "errors": {
+      "blank": "kan nie leeg wees nie",
+      "blocked_address": "Hierdie ligging word nie gesteun nie",
+      "credit_card_session_expired": "Kredietkaartmagtiging het verval. Voer asseblief weer jou betalinginligting in. Jou kaart is nie gehef nie.",
+      "empty": "kan nie leeg wees nie",
+      "invalid_email": "moet 'n geldige e-posadres wees",
+      "discount_disabled": "Hierdie afslag is gedeaktiveer",
+      "discount_expired": "Hierdie afslag is nie meer geldig nie",
+      "discount_limit_reached": "Hierdie afslag het sy gebruikslimiet bereik",
+      "discount_not_found": "Kan nie 'n geldige afslag vind wat ooreenstem met die kode wat ingevoer is nie",
+      "customer_already_used_once_per_customer_discount_notice": "Hierdie afslag het sy gebruikslimiet bereik",
+      "gift_card_already_applied": "Kode is reeds op jou betaalpunt toegepas",
+      "gift_card_code_invalid": "Kode is ongeldig",
+      "gift_card_currency_mismatch": "Jou geskenkbewys is in %{gift_card_currency}. Kontak ons ​​om dit weer in %{checkout_currency} te laat uitreik.",
+      "gift_card_depleted": "Daar is geen fondse oor op hierdie geskenkbewys nie",
+      "gift_card_disabled": "Geskenkbewys is gedeaktiveer",
+      "gift_card_expired": "Geskenkbewys het verval",
+      "invalid": "ongeldig is",
+      "bad_domain": "bevat 'n ongeldige domeinnaam",
+      "taken": "reeds geneem is",
+      "contains_html_tags": "kan nie HTML-merkers bevat nie",
+      "too_short": "is te kort (minimum is %{count} karakters)",
+      "too_long": "is te lank (maksimum is %{count} karakters)",
+      "password_mismatch": "moet ooreenstem met die verskafde wagwoord",
+      "contains_spaces": "begin of eindig met spasies.",
+      "email_domain_invalid": "verskaffer word nie ondersteun nie",
+      "invalid_for_country": "is nie geldig vir %{country}",
+      "invalid_for_country_and_province": "is nie geldig vir %{province} en %{country}",
+      "invalid_province_in_country": "is nie 'n geldige provinsie in %{country}",
+      "invalid_state_in_country": "is nie 'n geldige staat in %{country}",
+      "invalid_region_in_country": "is nie 'n geldige streek in %{country}",
+      "less_than_or_equal_to": "moet minder as of gelyk aan %{count} wees",
+      "not_supported": "word nie ondersteun nie",
+      "full_name_required": "Voer 'n voornaam en van in",
+      "invalid_for_card_type": "is nie geldig nie",
+      "invalid_type": "jammer, ons aanvaar nie kaarte van hierdie tipe nie",
+      "invalid_format": "formaat is nie geldig nie",
+      "expired": "het verval",
+      "invalid_start_date_or_issue_number_for_debit": "'n geldige begindatum of uitgawenommer word vereis",
+      "invalid_expiry_year": "is nie 'n geldige vervaljaar nie",
+      "reset_password_html": "Hierdie e-posadres word reeds met 'n rekening geassosieer. As hierdie rekening joune is, kan jy <a href=\"/account/login#recover\">jou wagwoord terugstel</a>",
+      "verify_email": "Ons het 'n e-pos aan %{customer_email} gestuur, klik asseblief op die skakel wat ingesluit is om jou e-posadres te verifieer.",
+      "product_not_available": "produk word nie vir hierdie kliënt gepubliseer nie.",
+      "shop_404": {
+        "title": "Skep 'n e-handelswebwerf en verkoop aanlyn! E-handelsagteware deur Shopify",
+        "heros": {
+          "store_unavailable": "Jammer, hierdie winkel is tans nie beskikbaar nie.",
+          "store_not_exist": "Hierdie winkel bestaan ​​nie.",
+          "no_storefront": "Hierdie winkel het nog nie 'n webwerf nie."
+        },
+        "links": {
+          "explore_other_stores": "Verken ander winkels",
+          "start_free_trial": "Begin 'n gratis proeflopie"
+        },
+        "owner_ctas": {
+          "header": "Is jy die winkeleienaar?",
+          "fix_domain": "Voltooi die opstel van jou nuwe webadres, gaan na %{domain_settings_link}. Klik “Connect domain” en voer in: %{domain}.<br> As jy probleme ondervind om by jou winkel in te kom, probeer die %{forgot_your_store_link}-bladsy.",
+          "fix_domain_link_text": "jou domeininstellings",
+          "forgot_your_store_link_text": "het jou winkel vergeet",
+          "add_storefront": "Jy kan jou webwerf opstel deur die Aanlynwinkelkanaal in jou %{admin_link} by te voeg. As jy probleme ondervind om by jou winkel in te kom, probeer die %{forgot_your_store_link}-bladsy."
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "Verkoop persoonlik",
+            "caption": "Kry die funksies wat jy nodig het om jou kleinhandelwinkel te bestuur, of jy nou begin of opskaal.",
+            "link_text": "Begin gratis proeflopie"
+          },
+          "open_a_store": {
+            "header": "Maak 'n nuwe Shopify-winkel oop",
+            "caption": "Begin 'n gratis proeftydperk van 3 dae en gaan dan voort vir $1 per maand vir die volgende 3 maande.",
+            "link_text": "Teken nou in"
+          }
+        }
+      }
     }
   },
   "customer_accounts": {
