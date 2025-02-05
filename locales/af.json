@@ -783,6 +783,185 @@
           }
         }
       }
+    },
+    "order_details": {
+      "request_return_failed": "Daar was 'n probleem met die verwerking van jou versoek. Probeer asseblief weer.",
+      "remaining_amount": "Oorblywende",
+      "marketing_section_title": "Nuus en aanbiedinge",
+      "marketing_description": "Jy sal bemarkings-e-posse ontvang. Jy kan enige tyd uitteken.",
+      "marketing_checkbox_label": "E-pos my met nuus en aanbiedinge",
+      "marketing_checkmark_label": "Jy is ingeteken om e-posnuus en aanbiedinge te ontvang",
+      "returns": {
+        "expand_events_label": "Wys besonderhede",
+        "hide_events_label": "Versteek besonderhede",
+        "ineligible_return_message": "Geen items in hierdie bestelling kom in aanmerking vir terugstuur nie.",
+        "ineligible_return_message_when_returned": "Geen bykomende items in hierdie bestelling kom in aanmerking vir terugbesorging nie.",
+        "print_shipping_label": "Druk versendingetiket",
+        "return_and_refund_modal_header": "Terugbetalingsbeleid",
+        "tracking_number": "Naspoornommer:"
+      },
+      "shipping": {
+        "address": "Afleweringsadres",
+        "address_map_marker": "Afleweringsadres",
+        "method": "Versending metode",
+        "summary": "Versending",
+        "free": "Gratis",
+        "free_shipping_discount": "Gratis aflewering",
+        "one_time": "Eenmalige versending",
+        "subscription": "Intekeningversending"
+      },
+      "pickup": {
+        "pickup": "Bakkie",
+        "pickup_location": "Afhaalplek",
+        "pickup_point": "Optelpunt"
+      },
+      "show_items": "Wys items",
+      "show_order_summary": "Wys bestellingopsomming",
+      "hide_order_summary": "Versteek bestellingopsomming",
+      "subtitle": "Bevestig {{date}}",
+      "subtotal": "Subtotaal",
+      "summary_list_title_accessibility_label": "Bestel items",
+      "summary_title": "Opsomming van bestelling",
+      "summary_totals_title_accessibility_label": "Besteltotale",
+      "shop_order_tracking": {
+        "download_shop_to_track": "Laai Winkel af om pakket op te spoor",
+        "track_order_with_shop": "Volg bestelling met Winkel",
+        "title_header": "Skandeer met jou foon",
+        "real_time_delivery_updates": "Winkel sal vir jou intydse afleweringsopdaterings stuur sodra jou bestelling verskeep is."
+      },
+      "edit_summary": {
+        "added": "Bygevoeg",
+        "added_with_quantity": "Bygevoeg {{quantity}}",
+        "removed": "Verwyder",
+        "removed_with_quantity": "Verwyder {{quantity}}",
+        "updated_at": "Jou bestelling is op {{date}} opgedateer",
+        "returned": "Teruggekeer",
+        "returned_with_quantities": "Het {{delta}} van {{total}} teruggegee",
+        "removed_with_quantities": "Verwyder {{delta}} van {{total}}",
+        "return_line_item_removed": "Verwyder van terugkeer",
+        "return_line_item_removed_with_quantities": "Verwyder {{delta}} van terugkeer"
+      },
+      "shop_pay": {
+        "order_completed_with": "Bestelling voltooi met",
+        "learn_more": "Kom meer te wete"
+      },
+      "taxes": "Belasting",
+      "taxes_included": "Insluitend {{amount}} in belasting",
+      "duties_and_taxes_included": "Totaal sluit pligte en belasting in. Geen ekstra koste by aflewering nie.",
+      "duties": "Pligte",
+      "ok_duties_tooltip": "Hierdie bestelling word van 'n ander land af gestuur, so pligte is by jou bestellingtotaal gevoeg.",
+      "error_duties_tooltip": "Hierdie bestelling word van 'n ander land af gestuur, dus kan heffings en belasting gehef word by aflewering.",
+      "zero_duties_tooltip": "Hierdie bestelling word van 'n ander land af gestuur. Pligte word nie gehef op bestellings van hierdie waarde nie.",
+      "tip": "Wenk",
+      "title": "Bestel {{name}}",
+      "total": "Totaal",
+      "unit_price": "{{price}} /ea",
+      "pagination": {
+        "load_more": "Laai meer",
+        "load_more_accessibility_label": "Laai meer items",
+        "loading_accessibility_label": "Laai items"
+      },
+      "login_to_view_all_order_details": "Meld aan om alle bestellingbesonderhede te sien.",
+      "log_in": "Meld aan",
+      "logged_in_account_no_permission_to_order": "Jy is aangemeld as {{email}} . Hierdie rekening het nie toestemming om hierdie bestelling te bestuur nie.",
+      "log_in_to_a_different_account": "Meld aan by 'n ander rekening",
+      "fees": {
+        "restocking_fee": "Hervoorraadfooi",
+        "return_shipping_fee": "Retourversending"
+      },
+      "vat_invoices": {
+        "title": "BTW-fakture"
+      },
+      "cash_rounding": "Kontantafronding",
+      "adjusted_payment": "Aangepaste betaling",
+      "adjusted_total": "Aangepaste totaal"
+    },
+    "addresses": {
+      "add_button": "Voeg adres by",
+      "add_button_text": "Voeg by",
+      "add_button_accessibility_label": "Voeg adres by",
+      "back_button": "Terug",
+      "back_button_accessibility_label": "Terug na redigering adres {{address}}",
+      "add_address_banner": "Voeg adresse by om by die betaalpunt te gebruik",
+      "no_addresses_banner": "Geen adresse bygevoeg nie",
+      "address_deleted_notification": "Adres uitgevee",
+      "cancel_adding_address_accessibility_label": "Kanselleer byvoeging van adres",
+      "cancel_deletion_button": "Kanselleer",
+      "cancel_deletion_button_accessibility_label": "Kanselleer die uitvee van {{address}}",
+      "default_address": {
+        "title": "Verstek adres",
+        "title_accessibility_label": "Verstek adres: {{address}}"
+      },
+      "delete_button": "Vee uit",
+      "delete_button_accessibility_label": "Vee {{address}} uit",
+      "delete_confirmation_button": "Vee adres uit",
+      "delete_confirmation_button_accessibility_label": "Vee {{address}} uit",
+      "delete_confirmation_message": "Vee adres uit? Bestaande bestellings word nie geraak nie.",
+      "delete_confirmation_title": "Vee adres uit?",
+      "delete_confirmation_description": "Bestaande bestellings word nie geraak nie.",
+      "edit_button": "Wysig",
+      "edit_button_accessibility_label": "Wysig {{address}}",
+      "edit_section_accessibility_label": "Wysig {{address}}",
+      "edit_modal_title": {
+        "default": "Wysig adres",
+        "billing": "Wysig faktuuradres",
+        "shipping": "Wysig gestuuradres"
+      },
+      "loading_accessibility_message": "Laai adres",
+      "loading_addresses_accessibility_message": "Laai adresse"
+    },
+    "ui_components": {
+      "removeItem": "Verwyder {{label}}",
+      "removeTag": "Verwyder merker",
+      "month": {
+        "one": "maand",
+        "other": "maande"
+      },
+      "mapClusterTitle": {
+        "one": "Groep van {{number}} merker",
+        "other": "Groep van {{number}} merkers"
+      },
+      "expandSheet": "Brei uit",
+      "qrCode": "QR-kode",
+      "addFile": "Voeg lêer by",
+      "dropzoneInvalidFileType": "Lêertipe word nie ondersteun nie",
+      "dropzoneDraggedOver": "Los lêer om op te laai"
+    },
+    "profile_preview_bar": {
+      "customize_button": "Pasmaak",
+      "hide_bar": "Versteek kroeg",
+      "navigate_to_admin": "Navigeer na admin",
+      "close_preview": "Maak voorskou toe",
+      "previewing": "Jy bekyk tans:",
+      "saved_at": "Gestoor {{date}} om {{time}}",
+      "viewing": "Jy bekyk:",
+      "not_available": "Profieldata nie beskikbaar nie",
+      "actions_button": "Aksies"
+    },
+    "active_inspector": {
+      "extension": {
+        "select": "Kies die uitbreiding genaamd {{extensionName}}",
+        "unselect": "Ontkies die uitbreiding genaamd {{extensionName}}",
+        "move_down": "Skuif uitbreiding na die volgende posisie",
+        "move_up": "Skuif uitbreiding na die vorige posisie",
+        "remove": "Verwyder uitbreiding",
+        "move_down_tooltip": "Skuif na die volgende posisie",
+        "move_up_tooltip": "Beweeg na vorige posisie",
+        "remove_tooltip": "Verwyder"
+      }
+    },
+    "editor": {
+      "link_new_tab_confirmation": "Hierdie skakel kan nie binne die redigeerder oopgemaak word nie. Dit sal in 'n nuwe venster oopgemaak word ( {{resolved_to_link}} ). Klik OK om voort te gaan."
+    },
+    "settings": {
+      "title": "Instellings",
+      "loading_accessibility_message": "Laai tans instellingsbladsy",
+      "log_out_everywhere": {
+        "title": "Meld oral af",
+        "description": "As jy 'n toestel verloor het of sekuriteitsbekommernisse het, meld oral af om die sekuriteit van jou rekening te verseker.",
+        "button": "Meld oral af",
+        "warning_message": "Jy sal ook op hierdie toestel afgemeld word."
+      }
     }
   },
   "sections": {
@@ -794,7 +973,103 @@
       "cancel": "Kanselleer",
       "min_error": "Hierdie item het 'n minimum van {{ min }}",
       "max_error": "Hierdie item het 'n maksimum van {{ max }}",
-      "step_error": "Jy kan hierdie item slegs in inkremente van {{ step }} byvoeg"
+      "step_error": "Jy kan hierdie item slegs in inkremente van {{ step }} byvoeg",
+      "product_total": "Produk subtotaal",
+      "view_cart": "Bekyk karretjie",
+      "each": "{{ money }} /ea",
+      "product": "Produk",
+      "variant_total": "Variant totaal",
+      "items_added": {
+        "one": "{{ quantity }} item bygevoeg",
+        "other": "{{ quantity }} items bygevoeg"
+      },
+      "items_removed": {
+        "one": "{{ quantity }} item verwyder",
+        "other": "{{ quantity }} items verwyder"
+      },
+      "product_variants": "Produkvariante"
+    },
+    "announcements": {
+      "previous_announcement": "Vorige aankondiging",
+      "next_announcement": "Volgende aankondiging",
+      "carousel": "Karrousel",
+      "announcement": "Aankondiging",
+      "announcement_bar": "Aankondigingbalk"
+    },
+    "header": {
+      "announcement": "Aankondiging",
+      "menu": "Spyskaart",
+      "cart_count": {
+        "one": "{{ count }} item",
+        "other": "{{ count }} items"
+      }
+    },
+    "cart": {
+      "title": "Jou karretjie",
+      "caption": "Karretjie items",
+      "remove_title": "Verwyder {{ title }}",
+      "estimated_total": "Geskatte totaal",
+      "new_estimated_total": "Nuwe geskatte totaal",
+      "note": "Bestel spesiale instruksies",
+      "checkout": "Check uit",
+      "empty": "Jou mandjie is leeg",
+      "cart_error": "Daar was 'n fout tydens die opdatering van jou mandjie. Probeer asseblief weer.",
+      "cart_quantity_error_html": "Jy kan slegs {{ quantity }} van hierdie item by jou mandjie voeg.",
+      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Pligte en belasting ingesluit. Afslag en <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">versending word</a> by betaalpunt bereken.",
+      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Pligte en belasting ingesluit. Afslag en versending word by betaalpunt bereken.",
+      "taxes_included_shipping_at_checkout_with_policy_html": "Belasting ingesluit. Afslag en <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">versending word</a> by betaalpunt bereken.",
+      "taxes_included_shipping_at_checkout_without_policy": "Belasting ingesluit. Afslag en versending word by betaalpunt bereken.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Pligte ingesluit. Belasting, afslag en <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">versending word</a> by betaalpunt bereken.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Pligte ingesluit. Belasting, afslag en versending word by betaalpunt bereken.",
+      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Belasting, afslag en <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">versending word</a> by betaalpunt bereken.",
+      "taxes_at_checkout_shipping_at_checkout_without_policy": "Belasting, afslag en versending word by betaalpunt bereken.",
+      "headings": {
+        "product": "Produk",
+        "price": "Prys",
+        "total": "Totaal",
+        "quantity": "Hoeveelheid",
+        "image": "Produk beeld"
+      },
+      "update": "Dateer op",
+      "login": {
+        "title": "Het jy 'n rekening?",
+        "paragraph_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\" class=\"link underlined-link\">Meld aan</a> om vinniger uit te check."
+      }
+    },
+    "footer": {
+      "payment": "Betaalmetodes"
+    },
+    "featured_blog": {
+      "view_all": "Bekyk alles",
+      "onboarding_title": "Blogplasing",
+      "onboarding_content": "Gee jou kliënte 'n opsomming van jou blogplasing"
+    },
+    "featured_collection": {
+      "view_all": "Bekyk alles",
+      "view_all_label": "Bekyk alle produkte in die {{ collection_name }} versameling"
+    },
+    "collection_list": {
+      "view_all": "Bekyk alles"
+    },
+    "collection_template": {
+      "empty": "Geen produkte gevind nie",
+      "title": "Versameling",
+      "use_fewer_filters_html": "Gebruik minder filters of <a class=\"&lt;span class='notranslate'&gt;{{ class }}&lt;/span&gt;\" href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">verwyder almal</a>"
+    },
+    "video": {
+      "load_video": "Laai video: {{ description }}"
+    },
+    "slideshow": {
+      "load_slide": "Laai skyfie",
+      "previous_slideshow": "Vorige skyfie",
+      "next_slideshow": "Volgende skyfie",
+      "pause_slideshow": "Onderbreek skyfievertoning",
+      "play_slideshow": "Speel skyfievertoning",
+      "carousel": "Karrousel",
+      "slide": "Skyfie"
+    },
+    "page": {
+      "title": "Bladsy titel"
     }
   },
   "general": {
