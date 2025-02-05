@@ -2004,7 +2004,126 @@
   },
   "customer": {
     "account": {
-      "title": "Rekening"
+      "title": "Rekening",
+      "details": "Rekeningbesonderhede",
+      "view_addresses": "Bekyk adresse",
+      "return": "Keer terug na Rekeningbesonderhede"
+    },
+    "account_fallback": "Rekening",
+    "activate_account": {
+      "title": "Aktiveer rekening",
+      "subtext": "Skep jou wagwoord om jou rekening te aktiveer.",
+      "password": "Wagwoord",
+      "password_confirm": "Bevestig wagwoord",
+      "submit": "Aktiveer rekening",
+      "cancel": "Weier uitnodiging"
+    },
+    "addresses": {
+      "title": "Adresse",
+      "default": "Verstek",
+      "add_new": "Voeg 'n nuwe adres by",
+      "edit_address": "Wysig adres",
+      "first_name": "Voornaam",
+      "last_name": "Van",
+      "company": "Maatskappy",
+      "address1": "Adres 1",
+      "address2": "Adres 2",
+      "city": "Stad",
+      "country": "Land/streek",
+      "province": "Provinsie",
+      "zip": "Poskode/poskode",
+      "phone": "Telefoon",
+      "set_default": "Stel as verstekadres",
+      "add": "Voeg adres by",
+      "update": "Dateer adres op",
+      "cancel": "Kanselleer",
+      "edit": "Wysig",
+      "delete": "Vee uit",
+      "delete_confirm": "Is jy seker jy wil hierdie adres uitvee?"
+    },
+    "log_in": "Meld aan",
+    "log_out": "Teken uit",
+    "login_page": {
+      "cancel": "Kanselleer",
+      "create_account": "Skep rekening",
+      "email": "E-pos",
+      "forgot_password": "Het jy jou wagwoord vergeet?",
+      "guest_continue": "Gaan voort",
+      "guest_title": "Gaan voort as 'n gas",
+      "password": "Wagwoord",
+      "title": "Teken in",
+      "sign_in": "Meld aan",
+      "submit": "Dien in",
+      "alternate_provider_separator": "of"
+    },
+    "order": {
+      "title": "Bestel {{ name }}",
+      "date_html": "Geplaas op {{ date }}",
+      "cancelled_html": "Bestelling gekanselleer op {{ date }}",
+      "cancelled_reason": "Rede: {{ reason }}",
+      "billing_address": "Rekeningadres",
+      "payment_status": "Betaling Status",
+      "shipping_address": "Afleweringsadres",
+      "fulfillment_status": "Vervulling Status",
+      "discount": "Afslag",
+      "shipping": "Versending",
+      "tax": "Belasting",
+      "product": "Produk",
+      "price": "Prys",
+      "quantity": "Hoeveelheid",
+      "total": "Totaal",
+      "total_refunded": "Terugbetaal",
+      "fulfilled_at_html": "Voltooi {{ date }}",
+      "track_shipment": "Volg versending",
+      "tracking_url": "Volg skakel",
+      "tracking_company": "Draer",
+      "tracking_number": "Spoornommer",
+      "subtotal": "Subtotaal",
+      "total_duties": "Pligte"
+    },
+    "orders": {
+      "title": "Bestelgeskiedenis",
+      "order_number": "Bestel",
+      "order_number_link": "Bestelnommer {{ number }}",
+      "date": "Datum",
+      "payment_status": "Betalingstatus",
+      "fulfillment_status": "Vervulling status",
+      "total": "Totaal",
+      "none": "Jy het nog geen bestellings geplaas nie."
+    },
+    "recover_password": {
+      "title": "Stel jou wagwoord terug",
+      "subtext": "Ons sal vir jou 'n e-pos stuur om jou wagwoord terug te stel",
+      "success": "Ons het vir jou 'n e-pos gestuur met 'n skakel om jou wagwoord op te dateer."
+    },
+    "register": {
+      "title": "Skep rekening",
+      "first_name": "Voornaam",
+      "last_name": "Van",
+      "email": "E-pos",
+      "password": "Wagwoord",
+      "submit": "Skep"
+    },
+    "reset_password": {
+      "title": "Stel rekeningwagwoord terug",
+      "subtext": "Voer 'n nuwe wagwoord in",
+      "password": "Wagwoord",
+      "password_confirm": "Bevestig wagwoord",
+      "submit": "Stel wagwoord terug"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "how_to_use_gift_card": "Gebruik die geskenkbewyskode aanlyn of QR-kode in die winkel",
+      "title": "Hier is jou {{ value }} geskenkbewyssaldo vir {{ shop }} !",
+      "subtext": "Jou geskenkbewys",
+      "gift_card_code": "Geskenkbewyskode",
+      "shop_link": "Besoek aanlyn winkel",
+      "add_to_apple_wallet": "Voeg by Apple Wallet",
+      "qr_image_alt": "QR-kode – skandeer om geskenkbewys te gebruik",
+      "copy_code": "Kopieer geskenkbewyskode",
+      "expiration_date": "Verval {{ expires_on }}",
+      "copy_code_success": "Kode is suksesvol gekopieer"
     }
   }
 }
