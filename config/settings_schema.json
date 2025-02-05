@@ -1,21 +1,5 @@
 [
   {
-  "name": "Announcement Bar",
-  "settings": [
-    {
-      "id": "announcement_text",
-      "type": "richtext",
-      "label": "Announcement text"
-    },
-    {
-      "id": "show_icon",
-      "type": "checkbox",
-      "label": "Show icon",
-      "default": true
-    }
-  ]
-},
-  {
     "name": "theme_info",
     "theme_name": "Dawn",
     "theme_version": "15.2.0",
