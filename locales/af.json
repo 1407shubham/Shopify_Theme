@@ -389,7 +389,32 @@
         "estimated_delivery": "Huidige afleweringskatting: ",
         "re-order": "Herbestel dieselfde items",
         "confirmed": "Bevestig",
-        "gift_card_confirmation_by_text": "As jy dit nie ontvang het nie, stuur die teks weer of kontak ons."
+        "gift_card_confirmation_by_text": "As jy dit nie ontvang het nie, stuur die teks weer of kontak ons.",
+        "gift_card_confirmation_by_email_typ": {
+          "one": "Jy sal binne 'n paar minute 'n e-pos met jou geskenkbewys ontvang.",
+          "other": "Jy sal binne 'n paar minute 'n e-pos met jou geskenkbewyse ontvang."
+        },
+        "gift_card_email_title": {
+          "one": "Geskenkbewys is per e-pos gestuur",
+          "other": "Geskenkbewyse is per e-pos gestuur"
+        },
+        "gift_card_text_title": {
+          "one": "Geskenkbewys is per SMS gestuur",
+          "other": "Geskenkbewyse is per SMS gestuur"
+        },
+        "resend_gift_cards_by_email": "Stuur e-pos weer",
+        "resend_gift_cards_by_text": "Stuur teksboodskap weer",
+        "gift_card_resent_confirmation": {
+          "one": "Geskenkbewys is weer gestuur.",
+          "other": "Geskenkbewyse is weer gestuur."
+        },
+        "gift_card_resend_failure": {
+          "one": "Kon nie jou geskenkbewys weer stuur nie. Probeer weer of kontak ons.",
+          "other": "Kon nie jou geskenkbewyse herstuur nie. Probeer weer of kontak ons."
+        },
+        "vat_invoices": {
+          "title": "BTW-fakture"
+        }
       },
       "notice_banner": {
         "individual_violations_title": {
@@ -765,6 +790,131 @@
         "price_update": {
           "title": "Prys opdatering"
         }
+      },
+      "vaulted": {
+        "change_button": "Verander"
+      },
+      "review": {
+        "title": "Hersien",
+        "review_title": "Hersien en betaal",
+        "review_and_confirm_title": "Hersien en bevestig",
+        "checkout_as_guest": "Checkout as gas",
+        "checkout_a_different_way": "Betaal op 'n ander manier",
+        "blocks": {
+          "contact_method_title": "Kontak",
+          "billing_address_title": "Fakturering",
+          "shipping_address_title": "Stuur na",
+          "shipping_method_title": "Versending metode",
+          "payment_method_title": "Betaalmetode",
+          "change_link_label": "Verander",
+          "change_contact_method_link_label": "Verander kontakinligting",
+          "change_billing_address_link_label": "Verander faktuuradres",
+          "change_shipping_address_link_label": "Verander gestuuradres",
+          "change_shipping_method_link_label": "Verander versendingsmetode",
+          "change_payment_method_link_label": "Verander betaalmetode",
+          "pick_up_in_store_shipping_method_html": "Afhaal in winkel · %{location_name}",
+          "purchase_order_number_title": "PO nommer",
+          "change_purchase_order_number_label": "Verander PO-nommer",
+          "change_delivery_method_link_label": "Verander afleweringsmetode",
+          "no_address": "(Geen adres nie)",
+          "no_purchase_order_number": "(Geen posnommer nie)",
+          "due_after_order_reviewed_html": "Verskuldig nadat bestelling hersien is",
+          "review_title_free_order": "Hersien en voltooi jou bestelling",
+          "payment_method_saved_company_location": "Stoor kaart vir hierdie ligging"
+        },
+        "block_title": "Hersien jou inligting",
+        "item_header": {
+          "change_value": "Verander waarde",
+          "section": "Afdeling",
+          "value": "Waarde"
+        }
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "E-pos my met nuus en aanbiedinge",
+        "post_accept_marketing_checkbox_label": "Jy is ingeteken om e-posnuus en aanbiedinge te ontvang",
+        "pending_accept_marketing_checkbox_label": "Gaan jou e-pos na om jou intekening op nuus en aanbiedinge te bevestig",
+        "accept_sms_checkbox_label": "SMS my met nuus en aanbiedinge",
+        "disclaimer": {
+          "privacy_policy": "Privaatheidsbeleid",
+          "terms_of_service": "Diensbepalings"
+        },
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "Privaatheidsbeleid",
+            "terms_of_service": "Diensbepalings",
+            "description_html": "Deur via teks aan te meld, stem jy in om herhalende outomatiese bemarkingsboodskappe, insluitend wa-herinneringe, te ontvang by die telefoonnommer wat verskaf word. Toestemming is nie 'n voorwaarde vir aankoop nie. Antwoord STOP om uit te teken. Antwoord HELP vir hulp. Boodskapfrekwensie verskil. Boodskap- en datatariewe kan van toepassing wees. Bekyk ons ​​%{privacy_policy_link} en %{terms_of_service_link}.",
+            "description_transactional_html": "Jy kan teksboodskappe ontvang wat verband hou met bestellingbevestiging en afleweringsopdaterings. Antwoord STOP om uit te teken. Antwoord HELP vir hulp. Boodskapfrekwensie verskil. Boodskap- en datatariewe kan van toepassing wees. Bekyk ons ​​%{privacy_policy_modal_link} en %{terms_of_service_modal_link}."
+          },
+          "mobile_phone_number": "Selfoonnommer",
+          "get_offers_by_text": "Kry aanbiedings per teks"
+        },
+        "unsubscribe": {
+          "title": "Jy het uitgeteken",
+          "description": "Jy sal nie meer wa-herinneringe van ons ontvang nie."
+        },
+        "accept_shop_pay_marketing_checkbox_label": "Teken my in vir nuus en aanbiedinge van hierdie winkel"
+      },
+      "shop_policies": {
+        "refund_policy": "Terugbetalingsbeleid",
+        "privacy_policy": "Privaatheidsbeleid",
+        "terms_of_service": "Diensbepalings",
+        "legal_notice": "Regskennisgewing",
+        "shipping_policy": "Versendingsbeleid",
+        "terms_of_sale": "Verkoopsvoorwaardes",
+        "subscription_policy": "Kansellasiebeleid",
+        "purchase_options_policy": "Aankoopopsiesbeleid",
+        "contact_information": "Kontak inligting",
+        "purchase_options_cancellation_policy": "Kansellasiebeleid",
+        "cookie_preferences": "Koekievoorkeure"
+      },
+      "mor_policies": {
+        "terms_and_conditions": "Handelaar van Rekord Bepalings en Voorwaardes",
+        "privacy_policy": "Handelaar van Rekord Privaatheidsbeleid"
+      },
+      "markets": {
+        "invalid_market_manager_error": "Gaan jou kontakinligting na voordat jy betaling voltooi"
+      },
+      "notifications": {
+        "title": "Kennisgewings"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "Bedrag om te betaal vir bestelling %{order_name}",
+        "changes_summary": {
+          "added": {
+            "one": "Bygevoeg",
+            "other": "Bygevoeg %{count}"
+          },
+          "removed": "Verwyder",
+          "subtracted": "Het %{count} verwyder",
+          "returned": "Het %{count} teruggegee",
+          "return_line_item_removed": "Het %{count} van terugkeer verwyder"
+        },
+        "additional_payment_requested": "Betaling van %{total_outstanding} is nodig",
+        "checkout_review_and_pay": "Jou bestelling %{order_name} is opgedateer. Hersien hierdie veranderinge en betaal dan om jou bestelling te bevestig.",
+        "order_updated_on": "Jou bestelling is bygewerk op %{last_edited_at}.",
+        "order_review_and_pay": "Jou bestelling is opgedateer. Hersien en betaal om jou bestelling te bevestig.",
+        "pay_now": "Betaal nou"
+      },
+      "change_currency": {
+        "credit_card_will_be_charged_html": "Jou kredietkaart sal %{amount} gehef word",
+        "payment_total_label": "Betaling totaal",
+        "change_currency_link": "Verander na %{currency_name}",
+        "card_provider_fx_charges_warning": "Jou kaartverskaffer kan fooie hef op %{currency_code}-transaksies.",
+        "currency_not_supported_by_shop": "Die geldeenheid wat jy gekies het, is nie meer beskikbaar nie. Alle pryse is nou in %{currency_code}."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Jou mandjie is opgedateer op grond van jou versendingsland.",
+        "cart_and_currency_updated_based_on_country": "Jou mandjie en geldeenheid is opgedateer op grond van jou versendingsland."
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "Jou land/streek is opgedateer. Voer jou afleweringsadres in om voort te gaan met afhandeling."
+      },
+      "tips": {
+        "title": "Voeg wenk by",
+        "description": "Wys jou ondersteuning vir die span by %{shop_name}",
+        "presets_description": "Kies 'n fooipersentasie",
+        "custom_label": "Pasgemaakte wenk",
+        "add_tip": "Voeg wenk by"
       }
     }
   },
@@ -772,7 +922,130 @@
     "orders": {
       "order_list": {
         "table_view": "Wys tabelaansig",
-        "show_order_actions_accessibility_label": "Wys bestellingshandelinge vir bestelling {{name}}"
+        "show_order_actions_accessibility_label": "Wys bestellingshandelinge vir bestelling {{name}}",
+        "column_headers": {
+          "order": "Bestel",
+          "total": "Totaal",
+          "actions_accessibility_label": "Aksies",
+          "products_accessibility_label": "Produkte"
+        },
+        "delivered": "Afgelewer op {{date}}",
+        "empty_state_order_source_description": "Slegs bestellings wat deur {{email}} geplaas is, sal hier wys.",
+        "empty_state_subtitle": "Gaan winkel toe om 'n bestelling te plaas.",
+        "empty_state_title": "Nog geen bestellings nie",
+        "empty_state_title_for_pending_orders": "Geen hangende bestellings nie",
+        "no_order_banner": "Om jou uitbreiding op die Bestellingstatusbladsy te toets, skep 'n bestelling.",
+        "estimated_shortform": "Geskatte {{date}}",
+        "estimated_delivery": "Verwag {{date}}",
+        "one_images_accessibility_label": "Bestelling sluit {{lineItemName1}} in",
+        "two_images_accessibility_label": "Bestelling sluit in {{lineItemName1}} , {{lineItemName2}}",
+        "three_images_accessibility_label": "Bestelling sluit in {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}}",
+        "four_images_accessibility_label": "Bestelling sluit in {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} , {{lineItemName4}}",
+        "more_than_three_products_accessibility_label": "Bestelling sluit in {{lineItemName1}} , {{lineItemName2}} en {{numberOfAdditionalProducts}} produkte",
+        "more_than_four_products_accessibility_label": "Bestelling sluit in {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} en {{numberOfAdditionalProducts}} produkte",
+        "plus_more": "+ {{numberOfAdditionalProducts}}",
+        "plus_more_products": "+ {{numberOfAdditionalProducts}} produkte",
+        "carousel": {
+          "one_products_accessibility_label": "Bestelling sluit in {{lineItemName1}} hoeveelheid {{lineItemQuantity1}}",
+          "two_products_accessibility_label": "Bestelling sluit in {{lineItemName1}} hoeveelheid {{lineItemQuantity1}} , {{lineItemName2}} hoeveelheid {{lineItemQuantity2}}",
+          "three_products_accessibility_label": "Bestelling sluit in {{lineItemName1}} hoeveelheid {{lineItemQuantity1}} , {{lineItemName2}} hoeveelheid {{lineItemQuantity2}} , {{lineItemName3}} hoeveelheid {{lineItemQuantity3}}",
+          "four_products_accessibility_label": "Bestelling sluit in {{lineItemName1}} hoeveelheid {{lineItemQuantity1}} , {{lineItemName2}} {{lineItemName3}} {{lineItemQuantity3}} {{lineItemQuantity2}} , {{lineItemName4}} {{lineItemQuantity4}} hoeveelheid {{4}",
+          "five_products_accessibility_label": "Bestelling sluit in {{lineItemName1}} hoeveelheid {{lineItemQuantity1}} , {{lineItemName2}} hoeveelheid {{lineItemQuantity3}} {{lineItemQuantity2}} , {{lineItemName3}} hoeveelheid {{lineItemQuantity3}} , {{lineItemName4}} {{lineItemQuantity4}} {{lineItemName5}} hoeveelheid {{lineItemQuantity5}}",
+          "six_products_accessibility_label": "Bestelling sluit in {{lineItemName1}} hoeveelheid {{lineItemQuantity1}} , {{lineItemName2}} hoeveelheid {{lineItemQuantity3}} {{lineItemQuantity2}} , {{lineItemName3}} hoeveelheid {{lineItemQuantity3}} , {{lineItemName4}} {{lineItemQuantity4}} {{lineItemName5}} hoeveelheid {{lineItemQuantity5}} , {{lineItemName6}} hoeveelheid {{lineItemQuantity6}}",
+          "six_and_more_products_accessibility_label": "Bestelling sluit in {{lineItemName1}} hoeveelheid {{lineItemQuantity1}} , {{lineItemName2}} hoeveelheid {{lineItemQuantity3}} {{lineItemQuantity2}} , {{lineItemName3}} hoeveelheid {{lineItemQuantity3}} , {{lineItemName4}} {{lineItemQuantity4}} {{lineItemName5}} hoeveelheid {{lineItemQuantity5}} , {{lineItemName6}} hoeveelheid {{lineItemQuantity6}} en meer",
+          "view_order_details": "Bekyk bestellingbesonderhede",
+          "previous": "Vorige",
+          "next": "Volgende"
+        },
+        "items": {
+          "one": "{{count}} item",
+          "other": "{{count}} items"
+        },
+        "list_view": "Wys lysaansig",
+        "no_filtered_results_description": "Verwyder of pas filters aan om jou bestellings te sien",
+        "no_filtered_results_title": "Geen gefiltreerde resultate nie",
+        "order_link": "Bekyk bestelling {{name}}",
+        "order_number": "Bestel {{name}}",
+        "orders_title": "Bevestig",
+        "pagination": {
+          "nav_accessibility_label": "Bestellings navigasie knoppies",
+          "next": "Volgende",
+          "next_accessibility_label": "Volgende bestellings",
+          "previous": "Vorige",
+          "previous_accessibility_label": "Vorige bestellings",
+          "load_more": "Laai meer",
+          "load_more_accessibility_label": "Laai meer bestellings"
+        },
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "Sien bestelling vir besonderhede",
+            "estimated_delivery": "Verwag {{date}}",
+            "last_updated": "Laas opgedateer {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "Geskatte aflewering {{date}}"
+          }
+        },
+        "payment_status": {
+          "list_view": {
+            "overdue": "Betaling agterstallig",
+            "due": "Betaling betaalbaar {{date}}",
+            "due_today": "Betaling vandag betaalbaar",
+            "due_without_date": "Betaling verskuldig",
+            "due_on_fulfillment": "Betaling verskuldig by vervulling",
+            "pay_to_confirm": "Betaal om te bevestig",
+            "payment_not_due": "Betaling nog nie betaalbaar nie"
+          },
+          "table_view": {
+            "overdue": "Agterstallig",
+            "due": "Sperdatum {{date}}",
+            "due_today": "Vandag betaalbaar",
+            "paid": "Betaal",
+            "due_without_date": "Verskuldig",
+            "due_on_fulfillment": "Verskuldig op vervulling",
+            "pay_to_confirm": "Betaal om te bevestig",
+            "payment_not_due": "Nog nie verskuldig nie"
+          }
+        },
+        "sort_by": "Sorteer volgens: {{option}}",
+        "sort_hide_options_accessibility_label": "Versteek sorteeropsies vir bevestigde bestellings.",
+        "sort_show_options_accessibility_label": "Wys sorteeropsies vir bevestigde bestellings.",
+        "sort_currently_sorted_by_accessibility_label": "Tans gesorteer volgens: {{option}}",
+        "sort_title": "Sorteer",
+        "sort": {
+          "date": {
+            "newest": "Nuutste tot oudste",
+            "oldest": "Oudste tot nuutste"
+          },
+          "location": {
+            "ascending": "Ligging (AZ)",
+            "descending": "Ligging (ZA)"
+          },
+          "order_number": {
+            "ascending": "Bestelnommer (laag na hoog)",
+            "descending": "Bestelnommer (hoog na laag)"
+          },
+          "order_total": {
+            "ascending": "Besteltotaal (laag na hoog)",
+            "descending": "Bestelling totaal (hoog na laag)"
+          }
+        },
+        "filter": {
+          "clear_section": "Vee afdeling uit",
+          "clear_all": "Vee alles uit",
+          "apply": "Doen aansoek",
+          "date": {
+            "start_date": "Begin datum",
+            "end_date": "Einddatum",
+            "title": "Bestel datum",
+            "today": "Vandag",
+            "last_7_days": "Laaste 7 dae",
+            "last_30_days": "Laaste 30 dae",
+            "last_90_days": "Laaste 90 dae",
+            "last_365_days": "Laaste 12 maande",
+            "custom": "Pasgemaak"
+          }
+        }
       },
       "order_status": {
         "attempted_delivery_label": "Poging tot aflewering",
@@ -911,7 +1184,14 @@
             "claim_shop_cash_button_label": "Eis winkel kontant"
           }
         }
-      }
+      },
+      "list_layout_accessibility_label": "Uitleg opsies",
+      "list_title": "Bestellings",
+      "list_title_with_pending_orders": "Bestellings:",
+      "list_title_confirmed_orders_accessibility_label": "Bestellings: bevestig",
+      "list_title_pending_orders_accessibility_label": "Bestellings: hangende",
+      "switch_order_type_pending_orders_accessibility_label": "Wissel bestellingtipe, bekyk tans hangende bestellings",
+      "switch_order_type_confirmed_orders_accessibility_label": "Wissel bestellingtipe, bekyk tans bevestigde bestellings"
     },
     "order_details": {
       "request_return_failed": "Daar was 'n probleem met die verwerking van jou versoek. Probeer asseblief weer.",
@@ -1211,6 +1491,14 @@
       "title": "Betaalmetodes",
       "add_payment_method_button": "Voeg betaalmetode by",
       "add_payment_method_banner": "Voeg betaalmetode by vir vinniger afreken of voorafgoedgekeurde dienste"
+    },
+    "account_information": {
+      "people": {
+        "pagination": {
+          "loading_accessibility_label": "Laai mense"
+        }
+      },
+      "add_button": "Voeg by"
     }
   },
   "sections": {
