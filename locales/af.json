@@ -806,7 +806,152 @@
         "waiting_on_rate_notice": "Kry tans beskikbare versendingstariewe …",
         "waiting_on_pickup_location_notice": "Kry tans beskikbare optelplekke …",
         "no_rates_for_cart_or_destination_notice": "Daar is geen afleweringsmetodes vir jou mandjie of adres beskikbaar nie",
-        "no_pickup_location_notice": "Ten minste een van jou produkte is nie beskikbaar vir afhaal nie"
+        "no_pickup_location_notice": "Ten minste een van jou produkte is nie beskikbaar vir afhaal nie",
+        "no_rates_for_country_notice": "Geen afleweringstariewe vir hierdie adres gevind nie.",
+        "no_rates_contact_notice": "Kontak ons ​​vir meer inligting",
+        "free_rate_label": "Gratis",
+        "cheapest_rate_label": "Goedkoopste",
+        "please_enter_your_shipping_information_notice": "Voer asseblief jou afleweringsinligting in.",
+        "estimated_delivery_date": {
+          "one": "%{count} werksdag",
+          "other": "%{count} werksdae"
+        },
+        "estimated_delivery_date_range": "%{minimum} tot %{maksimum} werksdae",
+        "estimated_delivery_time": "Geskatte aflewering %{time}",
+        "estimated_delivery_time_range": "Geskatte aflewering %{min_time}–%{max_time}",
+        "delivery_today": "Aflewering op dieselfde dag %{time}",
+        "delivery_tomorrow": "Volgende dag aflewering %{time}",
+        "two_day_delivery": "2-dag aflewering %{time}",
+        "delivery": "Aflewering %{time}",
+        "arrives_time": "Arriveer %{time}",
+        "arrives_time_range": "Arriveer %{min_time}–%{max_time}",
+        "estimated_time": "Geskatte %{time}",
+        "estimated_time_range": "Geskatte %{min_time}–%{max_time}",
+        "default_description": "Versend in 1 werksdag",
+        "shipping_line_phone_label": "Selfoonnommer (vereis)",
+        "shipping_line_phone": "Jou koerier kan hierdie nommer gebruik om jou te kontak.",
+        "shipping_line_delivery_phone_label": "Selfoonnommer",
+        "shipping_line_delivery_phone": "Jy kan dalk gekontak word met opdaterings oor jou aflewering.",
+        "optional_shipping_line_delivery_instructions_label": "Afleweringsinstruksies (opsioneel)",
+        "shipping_line_delivery_instructions": "Voer nodige inligting in soos deurkodes of aflaai-instruksies.",
+        "other_method": {
+          "zero": "Geen ander metodes beskikbaar nie",
+          "one": "%{count} ander metode beskikbaar by",
+          "other": "%{count} ander metodes beskikbaar vanaf"
+        },
+        "shipping_rate_discounted_amount": "Was: %{original_amount}. Nou: %{amount}",
+        "local_delivery": "Plaaslike aflewering",
+        "subscription_delivery_description": {
+          "free_shipping_cycles": {
+            "one": "Gratis aflewering vir nog %{count} aflewering",
+            "other": "Gratis versending vir nog %{count} aflewerings"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "one": "Gratis aflewering vir %{count} aflewering",
+            "other": "Gratis versending vir %{count} aflewerings"
+          },
+          "first_n_order_free_with_cycle": {
+            "one": "Gratis aflewering vir nog %{count} aflewering, dan %{recurring_order_shipping_price}",
+            "other": "Gratis versending vir nog %{count} aflewerings, dan %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "Gratis aflewering vir %{count} aflewering, dan %{recurring_order_shipping_price}",
+            "other": "Gratis versending vir %{count} aflewerings, dan %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "%{count} meer aflewering vir %{shipping_price}",
+            "other": "%{count} meer aflewerings vir %{shipping_price} elk"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "%{count} aflewering vir %{shipping_price}",
+            "other": "%{count} meer aflewerings vir %{shipping_price} elk"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "Gratis aflewering vir die eerste %{cycle}, gevolg deur %{recurring_order_shipping_price}",
+            "other": "Gratis aflewering vir die eerste %{cycle}, gevolg deur %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_one_cycle": {
+            "one": "%{shipping_price} vir nog %{count} aflewering",
+            "other": "%{shipping_price} vir nog %{count} aflewerings (%{per_delivery_cost})"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "one": "%{shipping_price} vir %{count} aflewering",
+            "other": "%{shipping_price} vir %{count} aflewerings (%{per_delivery_cost})"
+          },
+          "prepaid_order_no_cycle": {
+            "one": "%{shipping_price} vir nog %{count} aflewering, gevolg deur %{recurring_order_shipping_price}",
+            "other": "%{shipping_price} vir nog %{count} aflewerings (%{per_delivery_cost}), gevolg deur %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_no_cycle_delivery_not_included": {
+            "one": "%{shipping_price} vir %{count} aflewering, gevolg deur %{recurring_order_shipping_price}",
+            "other": "%{shipping_price} vir %{count} aflewerings (%{per_delivery_cost}), gevolg deur %{recurring_order_shipping_price}"
+          },
+          "subscription_free_with_frequency_label": "Gratis aflewering %{delivery_frequency}",
+          "prepaid_delivery_frequency": {
+            "one": "vir %{count} aflewering",
+            "other": "vir %{count} aflewerings"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "elke dag",
+              "other": "elke %{count} dae"
+            },
+            "week": {
+              "one": "elke week",
+              "other": "elke %{count} weke"
+            },
+            "month": {
+              "one": "elke maand",
+              "other": "elke %{count} maande"
+            },
+            "year": {
+              "one": "elke jaar",
+              "other": "elke %{count} jaar"
+            }
+          },
+          "multiple_subscriptions_shipping_price_label": "%{shipping_price} per aflewering",
+          "prepaid_shipping_price_label": "%{shipping_price} per aflewering x %{delivery_interval_count}",
+          "initial_order_discounted": "Eerste afleweringskoste %{discounted_shipping_cost}, dan %{frequency_description}",
+          "prepaid_initial_order_discounted": "Eerste afleweringskoste %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "Eerste afleweringskoste %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "Eerste afleweringskoste %{discounted_shipping_price} %{prepaid_delivery_frequency}, dan %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "Eerste afleweringskoste %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), dan %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "Ingesluit",
+          "recurring_order_shipping_price": "gevolg deur %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "Eerste bestelling ingesluit, gevolg deur %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} per aflewering), gevolg deur %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "Eerste bestelling gratis",
+            "other": "Eerste %{count} bestellings gratis"
+          },
+          "free_for_first_n_order": {
+            "one": "Vir eerste bestelling",
+            "other": "Vir eerste %{count} bestellings"
+          }
+        },
+        "one_time_purchase_shipping": "Eenmalige aflewering",
+        "duties_and_taxes_title": "Pligte en belasting",
+        "shipping_information_required_notice": "Gestuurinligting word vereis. {{link}} .",
+        "shipping_information_redirect_link": "Voer jou inligting hier in",
+        "loading_progressive_rates": "Soek tans vir meer tariewe …",
+        "no_other_methods_available": "Geen ander metodes beskikbaar nie",
+        "duties_and_taxes_options": {
+          "ddu_title": "Betaal met aflewering",
+          "ddu_caption": "Bykomende fooie kan van toepassing wees",
+          "ddp_title": "Betaal nou",
+          "ddp_caption": "Geen addisionele fooie by aflewering nie"
+        },
+        "shipping_method_combinations": {
+          "combination": "%{rest} en %{current}"
+        },
+        "shipping_used_as_billing_notice": "Dit sal ook as jou faktuuradres vir hierdie bestelling gebruik word.",
+        "address_update": "Dateer adres op",
+        "shipping_address_title": "Stuur na",
+        "add_address": "Gebruik 'n ander adres",
+        "add_delivery_instructions": "Voeg afleweringsinstruksies by",
+        "edit": "Wysig",
+        "delete": "Vee uit",
+        "address_more": "Meer aksies vir hierdie adres"
       },
       "delivery_options": {
         "free_total_label": "Gratis",
