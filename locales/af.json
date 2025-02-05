@@ -1148,6 +1148,93 @@
         "gift_cards_not_supported_with_deferred_purchase_options": "Geskenkbewyse word nie ondersteun met uitgestelde aankoopopsies nie.",
         "gift_card_buying_gift_card": "Jy kan nie 'n geskenkbewys gebruik om 'n ander geskenkbewys te koop nie"
       }
+    },
+    "email_marketing": {
+      "open_tracking": {
+        "no_longer_track": {
+          "privacy_policy": "Nadat hierdie e-pos gestuur is, het ons ons privaatheidsbeleid opgedateer en ons spoor nie meer oop nie."
+        },
+        "track": {
+          "status_html": "<b>E-pos oopopsporing word aangemeld.</b>",
+          "visibility": "Ons sal slegs sien of jy die e-pos oopgemaak het, as deel van die totale e-pos oopmaakkoers."
+        },
+        "updated_policy": {
+          "status_html": "<b>E-pos oopopsporing word aangemeld.</b>",
+          "visibility": "Ons het ons beleid opgedateer, en spoor-e-posse word nou oopgemaak. E-pos oop tariewe sal anoniem gerapporteer word. Ons sal net sien of jy 'n e-pos oopgemaak het as deel van die totale e-pos oopmaakkoers.",
+          "opt_out_html": "As jy nie hierdie inligting wil deel nie, kan jy <a style=\"text-decoration:underline;\" href=\"%{link}\">uitteken.</a>"
+        }
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "In voorraad",
+          "out_of_stock": "Uit voorraad"
+        }
+      },
+      "boolean": {
+        "true_label": "Ja",
+        "false_label": "Nee"
+      }
+    },
+    "search": {
+      "error": "Kon nie jou soekresultate laai nie. Herlaai asseblief die bladsy of probeer later weer.",
+      "sorting": {
+        "relevance": "Relevansie",
+        "price_ascending": "Prys, laag tot hoog",
+        "price_descending": "Prys, hoog tot laag"
+      }
+    },
+    "page_titles": {
+      "blog_or_article_with_error": "Fout - %{title}",
+      "products": "Produkte",
+      "shopping_cart": "Jou inkopiemandjie",
+      "account": "Rekening",
+      "create_account": "Skep rekening",
+      "reset_account": "Stel rekening terug",
+      "addresses": "Adresse",
+      "order": "Bestelling %{name}",
+      "search": "Soek",
+      "search_results": {
+        "one": "Soek: %{count} resultaat gevind vir \"%{terms}\"",
+        "other": "Soek: %{count} resultate gevind vir \"%{terms}\""
+      },
+      "collections": "Versamelings",
+      "not_found": "404 Nie gevind nie",
+      "challenge": "Uitdaging",
+      "checkpoint": "Kontrolepunt"
+    },
+    "cart": {
+      "discounts_with_count": "%{count} afslag is toegepas"
+    },
+    "challenge": {
+      "message": "Laat weet ons dat jy nie 'n robot is om voort te gaan nie.",
+      "error": "Jou antwoord was nie korrek nie, probeer asseblief weer.",
+      "submit_button_text": "Dien in"
+    },
+    "checkpoint": {
+      "message": "Los Captcha op om voort te gaan",
+      "error": "Captcha-bekragtiging het misluk",
+      "submit_button_text": "Dien in"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "Gewoonlik gereed in 1 uur",
+        "two_hours": "Gewoonlik binne 2 uur gereed",
+        "four_hours": "Gewoonlik binne 4 uur gereed",
+        "twenty_four_hours": "Gewoonlik binne 24 uur gereed",
+        "two_to_four_days": "Gewoonlik gereed in 2-4 dae",
+        "five_or_more_days": "Gewoonlik gereed in 5+ dae",
+        "zero_to_two_hours": "Gewoonlik binne 2 uur gereed",
+        "two_to_four_hours": "Gewoonlik binne 4 uur gereed",
+        "immediately": "Gereed vir afhaal nou",
+        "next_day": "Klaar vir afhaal volgende dag"
+      }
+    },
+    "subscriptions": {
+      "buyer_consent_product": "Hierdie item is 'n herhalende of uitgestelde aankoop. Deur voort te gaan, stem ek in tot die %{cancellationPolicyLink} en magtig ek jou om my betaalmetode te hef teen die pryse, frekwensie en datums wat op hierdie bladsy gelys word totdat my bestelling vervul is of ek kanselleer, indien toegelaat.",
+      "buyer_consent_cart": "Een of meer van die items in jou mandjie is 'n herhalende of uitgestelde aankoop. Deur voort te gaan, stem ek in tot die %{cancellationPolicyLink} en magtig ek jou om my betaalmetode te hef teen die pryse, frekwensie en datums wat op hierdie bladsy gelys word totdat my bestelling vervul is of ek kanselleer, indien toegelaat.",
+      "cancellation_policy": "kansellasiebeleid"
     }
   },
   "customer_accounts": {
@@ -1863,10 +1950,75 @@
     "account_information": {
       "people": {
         "pagination": {
-          "loading_accessibility_label": "Laai mense"
+          "loading_accessibility_label": "Laai mense",
+          "load_more": "Laai meer",
+          "load_more_accessibility_label": "Laai meer mense"
         }
       },
-      "add_button": "Voeg by"
+      "add_button": "Voeg by",
+      "loading_accessibility_message": "Laai tans rekeninginligting",
+      "loading_finished_accessibility_message": "Rekeninginligting is gelaai",
+      "profile_card": {
+        "cancel": "Kanselleer",
+        "cancel_accessibility_label": "Kanselleer wysiging van profiel",
+        "edit": "Wysig",
+        "edit_accessibility_label": "Wysig profiel",
+        "email_help_text": "E-pos wat vir aanmelding gebruik word, kan nie verander word nie",
+        "first_name": "Voornaam",
+        "last_name": "Van",
+        "no_name_provided_accessibility_label": "Geen naam bygevoeg nie",
+        "phone_number_help_text": "Telefoonnommer wat vir aanmelding gebruik word, kan nie verander word nie",
+        "save": "Stoor",
+        "save_accessibility_label": "Stoor profiel",
+        "title": "Profiel"
+      },
+      "profile_update_confirmation_message": "Profiel opgedateer",
+      "title": "Profiel"
+    },
+    "date": {
+      "humanize": {
+        "lessThanOneHourAgo": {
+          "one": "{{count}} minuut gelede",
+          "other": "{{count}} minute gelede"
+        },
+        "lessThanOneMinuteAgo": "Netnou",
+        "yesterday": "Gister om {{time}}",
+        "today": "Vandag om {{time}}",
+        "tomorrow": "Môre om {{time}}"
+      }
+    },
+    "enable_javascript": "Om jou rekening te sien, aktiveer JavaScript in jou blaaierinstellings of meld aan met 'n ander blaaier.",
+    "navigation_and_structure": {
+      "account_menu": {
+        "hide_accessibility_label": "Versteek rekeningkieslys",
+        "label": "Rekening",
+        "show_accessibility_label": "Wys rekeningkieslys",
+        "nav_accessibility_label": "Rekeningnavigasie",
+        "open_menu_accessibility_label": "Maak rekeningnavigasie oop",
+        "close_menu_accessibility_label": "Maak rekeningnavigasie toe",
+        "loading_message": "Laai tans rekeningnavigasie"
+      },
+      "action_menu_accessibility_label": "Meer aksies",
+      "close_menu_accessibility_label": "Maak hoofnavigasie toe",
+      "contact_email_subject": "Kontak vanaf {{shopName}} aanlyn winkel",
+      "contact_link": "Kontak inligting",
+      "delete_confirmation": {
+        "cancel": "Kanselleer",
+        "delete": "Vee uit"
+      },
+      "dismiss_toast": "Verwerp",
+      "document_title": "{{sectionName}} - {{shopName}} - Rekening",
+      "go_to_store_link": "Gaan winkel toe",
+      "loading_message": "Laai tans",
+      "log_out_link": "Teken uit",
+      "logout_overlay_label": "Meld jou tans af...",
+      "nav_label_accessibility_label": "Hoofnavigasie",
+      "navigation_accessibility_message": "Jy het na {{sectionName}} navigeer",
+      "open_menu_accessibility_label": "Maak hoofnavigasie oop",
+      "orders_link_label": "Bestellings",
+      "shop_logo_accessibility_label": "{{shopName}} logo",
+      "subscriptions_link_label": "Subskripsies",
+      "settings_link": "Instellings"
     }
   },
   "sections": {
