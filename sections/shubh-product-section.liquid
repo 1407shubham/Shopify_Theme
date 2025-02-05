@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="{{ 'shubh-product-section.css' | asset_url }}">
+
+<div class="parent">
+    <!-- Child 1 -->
+    <div class="child">
+        <h2>{{ section.settings.product_1_title }}</h2>
+        <p>{{ section.settings.product_1_description }}</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <!-- Child 2 -->
+    <div class="child">
+        <h2>{{ section.settings.product_2_title }}</h2>
+        <p>{{ section.settings.product_2_description }}</p>
+        <button>Add to Cart</button>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Shubh Product Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "product_1_title",
+      "label": "Product 1 Title",
+      "default": "Product 1"
+    },
+    {
+      "type": "textarea",
+      "id": "product_1_description",
+      "label": "Product 1 Description",
+      "default": "This is a great product that you will love."
+    },
+    {
+      "type": "text",
+      "id": "product_2_title",
+      "label": "Product 2 Title",
+      "default": "Product 2"
+    },
+    {
+      "type": "textarea",
+      "id": "product_2_description",
+      "label": "Product 2 Description",
+      "default": "Another amazing product you must check out."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shubh Product Section"
+    }
+  ]
+}
+{% endschema %}

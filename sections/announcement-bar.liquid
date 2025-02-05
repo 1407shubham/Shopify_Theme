@@ -41,7 +41,7 @@
           {%- endif -%}
               {% if section.settings.show_icon %}
                 <span class="announcement-bar__icon">
-                  {% render 'bell-icon' %}  </span>
+                  <img src ="{{block.settings.icon-top-links}}">  </span>
               {% endif %}
           <p class="announcement-bar__message h5">
             <span>{{ section.blocks.first.settings.text | escape }}</span>
@@ -91,11 +91,13 @@
                 aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
                 tabindex="-1"
               >
+                {{block.settings.icon-top-links | img_tag}}
                 <div
                   class="announcement-bar__announcement"
                   role="region"
                   aria-label="{{ 'sections.header.announcement' | t }}"
                 >
+
                   {%- if block.settings.text != blank -%}
                     {%- if block.settings.link != blank -%}
                       <a
@@ -165,22 +167,7 @@
     </div>
   </div>
 </div>
-{
-  "name": "Announcement Bar",
-  "settings": [
-    {
-      "id": "announcement_text",
-      "type": "richtext",
-      "label": "Announcement text"
-    },
-    {
-      "id": "show_icon",
-      "type": "checkbox",
-      "label": "Show icon",
-      "default": true
-    }
-  ]
-}
+
 {% schema %}
 {
   "name": "t:sections.announcement-bar.name",
@@ -196,12 +183,14 @@
       "label": "t:sections.all.colors.label",
       "default": "scheme-4"
     },
+
     {
       "id": "show_icon",
       "type": "checkbox",
       "label": "Show icon",
       "default": true
     },
+
     {
       "type": "checkbox",
       "id": "show_line_separator",
@@ -273,6 +262,11 @@
           "default": "t:sections.announcement-bar.blocks.announcement.settings.text.default",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
         },
+        {
+              "type": "image_picker",
+              "id": "icon-top-links",
+              "label": "Image"
+            },
         {
           "type": "url",
           "id": "link",
