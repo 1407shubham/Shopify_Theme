@@ -3595,3 +3595,207 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+/*footer css start*/
+
+/* General Footer Styling */
+footer {
+  background-color: #f7f5ef;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+}
+
+footer .width-25 {
+  width: 25%;
+  padding: 10px;
+}
+
+footer h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+footer h5 a,
+footer a,
+footer .brand-link{
+  color: #000;
+  text-decoration: unset;
+}
+footer h5 a:hover,
+footer a:hover,
+footer .brand-link:hover {
+  color: #666;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+/* Contact Info */
+footer .cols {
+  display: flex;
+}
+
+footer .cols div {
+  flex: 1;
+}
+
+footer p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Payment Icons */
+footer .l4pm {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+footer .l4pm li {
+  display: inline-block;
+}
+
+/* Language Selector */
+footer .l4dr {
+  display: flex;
+  align-items: center;
+}
+
+footer .l4dr img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+/* Copyright Section */
+footer .align-middle {
+  text-align: center;
+}
+
+footer .align-middle p {
+  font-size: 12px;
+  color: #777;
+}
+
+figure {
+  margin: 0;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  footer ul {
+    margin: 0;
+  }
+
+  footer nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .width-25 {
+    width: 100%;
+    border-bottom: 1px solid #191919;
+  }
+
+  footer .cols {
+    flex-direction: column;
+  }
+}
+/* =========================================================================================================
+ */
+
+ /* Hide the checkbox visually but keep it accessible */
+ .footer-toggle {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Style for the label (clickable area) */
+.footer-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f5ef; /* New background color */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.footer-label:hover {
+  background-color: #f7f5ef; /* Slightly darker on hover */
+}
+
+/* Hide content by default */
+.footer-content {
+  display: none;
+  background-color: #f7f5ef; /* Darker background */
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* When checkbox is checked, show content */
+.footer-toggle:checked + .footer-label + .footer-content,
+.footer-toggle:checked + .footer-label + .footer-content.sectionone {
+  display: block;
+  max-height: 1000px;
+  padding-top: 15px;
+}
+
+/* Mobile Only Toggle (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Enable toggle for mobile screens */
+  .footer-content {
+    display: none;
+    max-height: 0;
+  }
+
+  .footer-toggle:checked + .footer-label + .footer-content {
+    display: block;
+    max-height: 1000px;
+    padding-top: 8px;
+  }
+  footer h5 {
+    margin: 0;
+  }
+}
+
+/* Disable toggle for larger screens (desktop) */
+@media (min-width: 769px) {
+  footer h5 {
+    margin-bottom: 10px;
+    color: #000;
+  }
+  .footer-content {
+    display: block; /* Show content on larger screens */
+    max-height: none;
+    padding-top: 0;
+  }
+
+  /* Hide toggle functionality on desktop */
+  .footer-toggle {
+    display: none; /* Hide checkbox on desktop */
+  }
+
+  .footer-label {
+    pointer-events: none; /* Disable click on label */
+    cursor: default; /* Change cursor to default */
+  }
+}
