@@ -50,6 +50,115 @@
   -%}
     {%- unless only_empty_brand -%}
       <div class="footer__content-top page-width">
+        {%- if section.blocks.size > 0 -%}
+          {%- liquid
+            if section.blocks.size == 9
+              assign footer_grid_class = 'grid--3-col-tablet'
+            elsif section.blocks.size > 6
+              assign footer_grid_class = 'grid--4-col-desktop'
+            elsif section.blocks.size > 4
+              assign footer_grid_class = 'grid--3-col-tablet'
+            endif
+          -%}
+          <div
+            class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+            {% endif %}
+          >
+            {%- for block in section.blocks -%}
+              <div
+                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                {{ block.shopify_attributes }}
+                {% if settings.animations_reveal_on_scroll %}
+                  data-cascade
+                  style="--animation-order: {{ forloop.index }};"
+                {% endif %}
+              >
+                {%- if block.settings.heading != blank -%}
+                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                {%- endif -%}
+
+                {%- case block.type -%}
+                  {%- when '@app' -%}
+                    {% render block %}
+                  {%- when 'text' -%}
+                    <div class="footer-block__details-content rte">
+                      {{ block.settings.subtext }}
+                    </div>
+                  {%- when 'link_list' -%}
+                    {%- if block.settings.menu != blank -%}
+                      <ul class="footer-block__details-content list-unstyled">
+                        {%- for link in block.settings.menu.links -%}
+                          <li>
+                            <a
+                              href="{{ link.url }}"
+                              class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+                            >
+                              {{ link.title | escape }}
+                            </a>
+                          </li>
+                        {%- endfor -%}
+                      </ul>
+                    {%- endif -%}
+                  {%- when 'brand_information' -%}
+                    <div class="footer-block__brand-info">
+                      {%- if settings.brand_image != blank -%}
+                        {%- assign brand_image_height = settings.brand_image_width
+                          | divided_by: settings.brand_image.aspect_ratio
+                        -%}
+                        <div
+                          class="footer-block__image-wrapper"
+                          style="max-width: min(100%, {{ settings.brand_image_width }}px);"
+                        >
+                          {{
+                            settings.brand_image
+                            | image_url: width: 1100
+                            | image_tag:
+                              loading: 'lazy',
+                              widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
+                              height: brand_image_height,
+                              width: settings.brand_image_width
+                          }}
+                        </div>
+                      {%- endif -%}
+                      {%- if settings.brand_headline != blank -%}
+                        <h2 class="footer-block__heading rte">{{ settings.brand_headline }}</h2>
+                      {%- endif -%}
+                      {%- if settings.brand_description != blank -%}
+                        <div class="rte">{{ settings.brand_description }}</div>
+                      {%- endif -%}
+                      {%- if block.settings.show_social and has_social_icons -%}
+                        {%- render 'social-icons', class: 'footer__list-social' -%}
+                      {%- endif -%}
+                    </div>
+                  {%- when 'image' -%}
+                    <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+                      {%- if block.settings.image != blank -%}
+                        {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
+                        <div
+                          class="footer-block__image-wrapper"
+                          style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                        >
+                          <img
+                            srcset="{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
+                            src="{{ block.settings.image | image_url: width: 760 }}"
+                            alt="{{ block.settings.image.alt | escape }}"
+                            loading="lazy"
+                            width="{{ block.settings.image.width }}"
+                            height="{{ block.settings.image.height }}"
+                          >
+                        </div>
+                      {%- else -%}
+                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                      {%- endif -%}
+                    </div>
+                {%- endcase -%}
+              </div>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+
         <div
           class="footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {% if settings.animations_reveal_on_scroll %}
@@ -188,106 +297,28 @@
         {%- endif -%}
       </div>
     </div>
-  </div>
-</footer>
-
-<footer id="shopify-section-footer" class="shopify-section shopify-section-group-footer-group shopify-section-footer">
-  <nav id="shopify-section-footer" class="cols align-center sal-animate" data-sal="fade" data-sal-duration="500">
-    <div class="width-25 m6cn" style="--main_h_small:var(--main_h3);">
-      <div class="footer-logo-container">
-        <div>
-          <figure>
-            <picture>
-              <img src="//theme-next-wood.myshopify.com/cdn/shop/files/dark_ec0f1028-7c19-4953-b684-c41c3e2dbd5b.svg?v=1698752207&width=230" width="115" height="auto" alt="" loading="lazy">
-            </picture>
-          </figure>
-        </div>
-        <div>
-          <p>How can we help you?<br>Get in touch with our customer service.<a href="tel:1234567890"><br></a><a href="mailto:support@yourstore.com">support@yourstore.com</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="width-25">
-      <div class="footer-section">
-        <input type="checkbox" id="section1-toggle" class="footer-toggle ff-primary fw-700" />
-        <label for="section1-toggle" class="footer-label">
-          <h5 class="ff-primary fw-700"><a href="/pages/about-us">Information</a></h5>
-        </label>
-        <div class="footer-content">
-          <ul>
-            <li><a href="/pages/about-us" title="About us">About us</a></li>
-            <li><a href="/pages/contact" title="Contact">Contact</a></li>
+    <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
+      <div class="footer__copyright caption">
+        <small class="copyright__content"
+          >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
+        </small>
+        <small class="copyright__content">{{ powered_by_link }}</small>
+        {%- if section.settings.show_policy -%}
+          <ul class="policies list-unstyled">
+            {%- for policy in shop.policies -%}
+              {%- if policy != blank -%}
+                <li>
+                  <small class="copyright__content"
+                    ><a href="{{ policy.url }}">{{ policy.title | escape }}</a></small
+                  >
+                </li>
+              {%- endif -%}
+            {%- endfor -%}
           </ul>
-        </div>
+        {%- endif -%}
       </div>
-    </div>
-    <div class="width-25">
-       <div class="footer-section">
-        <input type="checkbox" id="section2-toggle" class="footer-toggle" />
-        <label for="section2-toggle" class="footer-label">
-          <h5 class="ff-primary fw-700"><a href="/pages/contact">Customer service</a></h5>
-        </label>
-        <div class="footer-content">
-          <ul>
-            <li><a href="/pages/shipping-info" title="Shipping info">Shipping info</a></li>
-            <li><a href="/pages/faq" title="FAQ">FAQ</a></li>
-            <li><a href="/pages/refunds-returns" title="Refund & Returns">Refund & Returns</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="width-25" style="--main_h_small:var(--main_h5);">
-      <div class="footer-section">
-        <input type="checkbox" id="section3-toggle" class="footer-toggle" />
-        <label for="section3-toggle" class="footer-label">
-          <h5 class="ff-primary fw-700">Your Brand Name</h5>
-        </label>
-        <div class="footer-content">
-          <p>All this beautiful content is used from <br>
-      <a href="https://yourwebsite.com/" title="https://yourwebsite.com/"><strong class="brand-link">YourWebsite.com</strong></a></p>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <div class="cols align-middle align-center">
-    <div>
-      <div class="cols cols-mobile align-middle text-center" style="--cols_spacing: 16px;">
-        <p>© <span class="date">{{ 'now' | date: "%Y" }}</span> Your Store Name, Powered by Shopify</p>
-      </div>
-    </div>
-    <div class="desktop-only"></div>
-    <div>
-      <ul class="l4dr">
-        <li class="sub lang cols" data-title="Language">
-          <a class="toggle mobile-hide" href="./">
-            <img src="{{ 'flag-en.svg' | asset_url }}" alt="English - flag" width="24" height="24">
-          </a>
-          <form method="post" action="/localization" id="localization_form" accept-charset="UTF-8" class="localization-form" enctype="multipart/form-data">
-            <input type="hidden" name="form_type" value="localization">
-            <input type="hidden" name="utf8" value="✓">
-            <input type="hidden" name="_method" value="put">
-            <input type="hidden" name="return_to" value="/">
-            <ul class="cols">
-              <li>
-                <img src="{{ 'flag-en.svg' | asset_url }}" alt="English - flag" width="24" height="24">
-                <a href="/" hreflang="en" data-value="en" lang="en" aria-current="true" class="active">English</a>
-              </li>
-              <li>
-                <img src="{{ 'flag-nl.svg' | asset_url }}" alt="Nederlands - flag" width="24" height="24">
-                <a href="/nl" hreflang="nl" data-value="nl" lang="nl">Nederlands</a>
-              </li>
-            </ul>
-            <input type="hidden" name="locale_code" value="en">
-            <input type="hidden" name="country_code" value="US">
-          </form>
-        </li>
-      </ul>
     </div>
   </div>
-  <ul class="l4pm">
-    <li><svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-visa"><title id="pi-visa">Visa</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"></path></svg></li>
-    <!-- Add more payment icons as needed -->
-  </ul>
 </footer>
 
 {% schema %}
