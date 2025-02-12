@@ -1,3 +1,21 @@
+/* Define the custom property (CSS variable) */
+:root {
+  --font-heading-scale: 1.2; /* Adjust this value as needed */
+}
+
+/* Apply the calculated font-size to headings */
+h1 {
+  font-size: calc(var(--font-heading-scale) * 1.8rem);
+}
+
+h2 {
+  font-size: calc(var(--font-heading-scale) * 1.6rem);
+}
+
+h3 {
+  font-size: calc(var(--font-heading-scale) * 1.4rem);
+}
+
 :root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;
@@ -3599,6 +3617,12 @@ details-disclosure > details {
 /*footer css start*/
 
 /* General Footer Styling */
+body footer h5 a,
+body footer a,
+body footer .brand-link {
+  color: #afa39a;
+  text-decoration: unset;
+}
 footer {
   background-color: #f7f5ef;
   padding: 40px 20px;
