@@ -14,6 +14,15 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "image_icqEzk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/dark_ec0f1028-7c19-4953-b684-c41c3e2dbd5b.svg",
+            "richtext": "<p>How can we help you?<br/>Get in touch with our customer service.<a href=\"tel:1234567890\"><br/></a><a href=\"mailto:support@someoneyouknow.online\">support@someoneyouknow.online</a></p>",
+            "image_width": 150,
+            "alignment": ""
+          }
+        },
         "footer-0": {
           "type": "link_list",
           "settings": {
@@ -37,6 +46,7 @@
         }
       },
       "block_order": [
+        "image_icqEzk",
         "footer-0",
         "footer-1",
         "footer-2"
@@ -45,6 +55,7 @@
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
         "newsletter_heading": "Follow our stories",
+        "newsletter_paragraph": "",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
