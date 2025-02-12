@@ -26,22 +26,22 @@
         "footer-0": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "heading": "Information",
+            "menu": "main-menu"
           }
         },
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Info",
-            "menu": "footer"
+            "heading": "Customer service",
+            "menu": "customer-service"
           }
         },
         "footer-2": {
           "type": "text",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
+            "heading": "Wolfwood",
+            "subtext": "<p>All this beautiful content is used from<br/><a href=\"https://dutchgarden.nl/\" title=\"https://dutchgarden.nl/\"><strong>Dutchgarden.nl.</strong></a></p>"
           }
         }
       },
