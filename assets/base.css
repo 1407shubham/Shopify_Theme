@@ -1540,12 +1540,12 @@ details[open] > .share-button__fallback {
   transition: none;
 }
 
-.share-button__fallback .field__input:focus,
+/* .share-button__fallback .field__input:focus,
 .share-button__fallback .field__input:-webkit-autofill {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: 0.1rem;
   box-shadow: 0 0 0 0.1rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
-}
+} */
 
 .share-button__fallback .field__input {
   box-shadow: none;
@@ -1622,7 +1622,7 @@ details[open] > .share-button__fallback {
   z-index: -1;
 }
 
-.field:after,
+/* .field:after,
 .select:after,
 .customer .field:after,
 .customer select:after,
@@ -1639,8 +1639,11 @@ details[open] > .share-button__fallback {
   box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity));
   transition: box-shadow var(--duration-short) ease;
   z-index: 1;
+} */
+.newsletter-form__field-wrapper .field:focus-visible {
+  outline: unset;
+  box-shadow: unset;
 }
-
 .select__select {
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
@@ -1661,7 +1664,7 @@ details[open] > .share-button__fallback {
   border-radius: var(--inputs-radius);
 }
 
-.field__input:focus-visible,
+/* .field__input:focus-visible,
 .select__select:focus-visible,
 .customer .field input:focus-visible,
 .customer select:focus-visible,
@@ -1669,9 +1672,9 @@ details[open] > .share-button__fallback {
   box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground));
   outline: 0;
   border-radius: var(--inputs-radius);
-}
+} */
 
-.field__input:focus,
+/* .field__input:focus,
 .select__select:focus,
 .customer .field input:focus,
 .customer select:focus,
@@ -1679,7 +1682,7 @@ details[open] > .share-button__fallback {
   box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground));
   outline: 0;
   border-radius: var(--inputs-radius);
-}
+} */
 
 .localization-form__select:focus {
   outline: 0;
@@ -1786,7 +1789,7 @@ details[open] > .share-button__fallback {
   opacity: 0;
 }
 
-.field__button {
+/* .field__button {
   align-items: center;
   background-color: transparent;
   border: 0;
@@ -1801,18 +1804,18 @@ details[open] > .share-button__fallback {
   right: 0;
   top: 0;
   width: 4.4rem;
-}
+} */
 
-.field__button > .svg-wrapper {
+/* .field__button > .svg-wrapper {
   height: 2.5rem;
   width: 2.5rem;
-}
+} */
 
-.field__input:-webkit-autofill ~ .field__button,
+/* .field__input:-webkit-autofill ~ .field__button,
 .field__input:-webkit-autofill ~ .field__label,
 .customer .field input:-webkit-autofill ~ label {
   color: rgb(0, 0, 0);
-}
+} */
 
 /* Text area */
 
@@ -3822,4 +3825,8 @@ figure {
     pointer-events: none; /* Disable click on label */
     cursor: default; /* Change cursor to default */
   }
+}
+.newsletter-form__field-wrapper .field__input:focus-visible {
+  outline: unset;
+  box-shadow: none;
 }
