@@ -11,6 +11,13 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom5_newsletter_pqjr67": {
+      "type": "custom5-newsletter",
+      "settings": {
+        "button_text": "Subscribe",
+        "icon_name": ""
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -69,6 +76,7 @@
     }
   },
   "order": [
+    "custom5_newsletter_pqjr67",
     "footer"
   ]
 }
