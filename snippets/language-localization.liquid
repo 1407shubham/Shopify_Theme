@@ -1,9 +1,32 @@
-{%- comment -%}
-  Renders the language picker for the localization form
+<style>
+  .disclosure-img-wraper {
+    background:White;
+  }
+  .localization-link-list span {
+    color:black;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const languageElements = document.querySelectorAll('.language-flag');
 
-  Accepts:
-    - localPosition: pass in the position in which the form is coming up to create specific IDs
-{%- endcomment -%}
+    languageElements.forEach((element) => {
+      const languageCode = element.getAttribute('data-iso'); // Assuming you have a data attribute for language codes like 'en', 'fr', 'de', etc.
+
+      // Call the REST Countries API to get the flag URL
+      fetch(`https://restcountries.com/v3.1/alpha/${languageCode.toLowerCase()}`)
+        .then(response => response.json())
+        .then(data => {
+          const country = data[0];
+          const flagUrl = country.flags[0]; // Get the URL of the flag image from the API response
+          element.src = flagUrl;  // Set the flag image source dynamically
+        })
+        .catch(error => {
+          console.error('Error fetching flag:', error);
+        });
+    });
+  });
+</script>
 
 <div class="disclosure">
   <button
@@ -13,15 +36,21 @@
     aria-controls="{{ localPosition }}List"
     aria-describedby="{{ localPosition }}Label"
   >
-    <span>{{ localization.language.endonym_name | capitalize }}</span>
+    <img 
+      id="language-flag" 
+      src="{{ localization.language.iso_code | append: '.png' | asset_url }}" 
+      alt="{{ localization.language.endonym_name }}" 
+      class="language-flag" width="20" height="15"
+    >
     {{ 'icon-caret.svg' | inline_asset_content }}
   </button>
-  <div class="disclosure__list-wrapper language-selector" hidden>
+
+  <div class="disclosure__list-wrapper language-selector disclosure-img-wraper" hidden>
     <ul id="{{ localPosition }}List" role="list" class="disclosure__list list-unstyled">
       {%- for language in localization.available_languages -%}
         <li class="disclosure__item" tabindex="-1">
           <a
-            class="link link--text disclosure__link caption-large focus-inset"
+            class="link link--text disclosure__link caption-large focus-inset localization-link-list"
             href="#"
             hreflang="{{ language.iso_code }}"
             lang="{{ language.iso_code }}"
@@ -30,13 +59,15 @@
             {% endif %}
             data-value="{{ language.iso_code }}"
           >
-            <span
-              {% if language.iso_code != localization.language.iso_code %}
-                class="visibility-hidden"
-              {% endif %}
+            <img 
+              src="{{ localization.language.iso_code | append: '.png' | asset_url }}"
+              id="flag-{{ language.iso_code }}" 
+              class="language-flag" 
+              alt="{{ language.endonym_name }}" 
+              width="20" height="15"
+              data-iso="{{ language.iso_code }}"
+              
             >
-              {{- 'icon-checkmark.svg' | inline_asset_content -}}
-            </span>
             <span>
               {{ language.endonym_name | capitalize }}
             </span>
@@ -46,4 +77,6 @@
     </ul>
   </div>
 </div>
+
 <input type="hidden" name="locale_code" value="{{ localization.language.iso_code }}">
+
