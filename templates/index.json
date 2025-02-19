@@ -45,7 +45,6 @@
       ],
       "settings": {
         "image": "shopify://shop_images/674dd8059eb6b.jpg",
-        "image_2": "shopify://shop_images/123bain-vente-flash.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "bottom-left",
