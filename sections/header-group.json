@@ -20,10 +20,19 @@
             "text": "Welcome to our store",
             "link": ""
           }
+        },
+        "announcement_bN8JHj": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our storefghdfgnfgm",
+            "icon-top-links": "shopify://shop_images/123bain-vente-flash.jpg",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_bN8JHj"
       ],
       "settings": {
         "color_scheme": "",
@@ -135,7 +144,7 @@
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
-        "menu_type_desktop": "mega",
+        "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "color_scheme": "scheme-1",
