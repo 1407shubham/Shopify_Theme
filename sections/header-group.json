@@ -39,6 +39,15 @@
     "header": {
       "type": "header",
       "blocks": {
+        "menu_image_A4pcx7": {
+          "type": "menu-image",
+          "settings": {
+            "link_name": "accessories",
+            "link_image": "shopify://shop_images/sleeper1.jpg",
+            "link_title": "collection4",
+            "link_url": "shopify://collections/collection4"
+          }
+        },
         "menu_image_mMNekw": {
           "type": "menu-image",
           "settings": {
@@ -95,6 +104,7 @@
         }
       },
       "block_order": [
+        "menu_image_A4pcx7",
         "menu_image_mMNekw",
         "menu_image_qKzBhM",
         "menu_image_GUjMzz",
