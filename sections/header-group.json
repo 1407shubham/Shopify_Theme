@@ -41,8 +41,7 @@
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
-        "enable_dark_mode": true,
+        "menu_type_desktop": "mega",
         "color_scheme": "scheme-1",
         "enable_country_selector": true,
         "enable_language_selector": true,
