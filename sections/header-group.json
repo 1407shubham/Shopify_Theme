@@ -39,6 +39,15 @@
     "header": {
       "type": "header",
       "blocks": {
+        "menu_image_mMNekw": {
+          "type": "menu-image",
+          "settings": {
+            "link_name": "accessories",
+            "link_image": "shopify://shop_images/123bain-vente-flash.jpg",
+            "link_title": "collection3",
+            "link_url": "shopify://collections/collection3"
+          }
+        },
         "menu_image_qKzBhM": {
           "type": "menu-image",
           "settings": {
@@ -86,6 +95,7 @@
         }
       },
       "block_order": [
+        "menu_image_mMNekw",
         "menu_image_qKzBhM",
         "menu_image_GUjMzz",
         "menu_image_UwYmVg",
