@@ -20,19 +20,10 @@
             "text": "Welcome to our store",
             "link": ""
           }
-        },
-        "announcement_bN8JHj": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our storefghdfgnfgm",
-            "icon-top-links": "shopify://shop_images/123bain-vente-flash.jpg",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "announcement_bN8JHj"
+        "announcement-bar-0"
       ],
       "settings": {
         "color_scheme": "",
