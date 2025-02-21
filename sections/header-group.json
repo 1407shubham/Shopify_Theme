@@ -43,8 +43,9 @@
           "type": "menu-image",
           "settings": {
             "link_name": "loungesets",
-            "link_title": "",
-            "link_url": ""
+            "link_image": "shopify://shop_images/sleeper1.jpg",
+            "link_title": "sleeper1",
+            "link_url": "shopify://products/sleeper1"
           }
         },
         "menu_image_b38bJR": {
@@ -65,11 +66,17 @@
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
         "color_scheme": "scheme-1",
+        "menu_color_scheme": "",
         "enable_country_selector": true,
         "enable_language_selector": true,
         "enable_customer_avatar": true,
-        "mobile_logo_position": "center"
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     }
   },
