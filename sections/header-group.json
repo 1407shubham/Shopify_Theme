@@ -38,6 +38,20 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "menu_image_b38bJR": {
+          "type": "menu-image",
+          "settings": {
+            "link_name": "Loungesets",
+            "link_image": "shopify://shop_images/123bain-vente-flash.jpg",
+            "link_title": "Loungesets",
+            "link_url": "shopify://collections/loungesets"
+          }
+        }
+      },
+      "block_order": [
+        "menu_image_b38bJR"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
