@@ -114,10 +114,10 @@
         "menu_image_b38bJR": {
           "type": "menu-image",
           "settings": {
-            "link_name": "Loungesets",
+            "link_name": "lounge",
             "link_image": "shopify://shop_images/123bain-vente-flash.jpg",
-            "link_title": "Loungesets",
-            "link_url": "shopify://collections/loungesets"
+            "link_title": "Lounge",
+            "link_url": "shopify://collections/lounge"
           }
         }
       },
