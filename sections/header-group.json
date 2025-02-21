@@ -39,6 +39,14 @@
     "header": {
       "type": "header",
       "blocks": {
+        "menu_image_qKzBhM": {
+          "type": "menu-image",
+          "settings": {
+            "link_name": "accessories",
+            "link_title": "collection2",
+            "link_url": "shopify://collections/collection2"
+          }
+        },
         "menu_image_GUjMzz": {
           "type": "menu-image",
           "settings": {
@@ -77,6 +85,7 @@
         }
       },
       "block_order": [
+        "menu_image_qKzBhM",
         "menu_image_GUjMzz",
         "menu_image_UwYmVg",
         "menu_image_UxjzLJ",
