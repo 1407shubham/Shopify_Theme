@@ -43,6 +43,7 @@
           "type": "menu-image",
           "settings": {
             "link_name": "accessories",
+            "link_image": "shopify://shop_images/674dd8059eb6b.jpg",
             "link_title": "collection2",
             "link_url": "shopify://collections/collection2"
           }
