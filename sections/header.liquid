@@ -1,6 +1,6 @@
 {% comment %}
-  Dynamic header drawer menu for Shopify Dawn theme.
-  Fetches navigation links and includes localization (country switcher).
+  Dynamic header drawer with image and text dropdowns for Shopify Dawn theme.
+  Preserves original design while making menu dynamic.
 {% endcomment %}
 
 <header-drawer data-breakpoint="{{ section.settings.menu_type_desktop | default: 'tablet' }}">
@@ -19,20 +19,28 @@
         <nav class="menu-drawer__navigation">
           <ul class="menu-drawer__menu list-menu" role="list">
             {% for link in linklists['main-menu'].links %}
-              <li>
+              <li class="group relative">
+                <a href="{{ link.url }}" class="px-4 py-2 inline-block">{{ link.title }}</a>
                 {% if link.links != blank %}
-                  <details>
-                    <summary class="menu-drawer__menu-item link link--text">{{ link.title }}</summary>
-                    <ul class="menu-drawer__submenu list-menu">
+                  <div class="absolute left-0 w-full bg-white shadow-lg hidden group-hover:flex">
+                    <div class="max-w-screen-xl mx-auto grid grid-cols-2 gap-4 p-4">
                       {% for childlink in link.links %}
-                        <li>
-                          <a href="{{ childlink.url }}" class="link link--text">{{ childlink.title }}</a>
-                        </li>
+                        <div class="relative overflow-hidden">
+                          <img
+                            src="{{ childlink.image | default: 'https://via.placeholder.com/400' }}"
+                            alt="{{ childlink.title }}"
+                            class="w-full h-full object-cover"
+                          >
+                          <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-white">
+                            <h3 class="text-2xl font-semibold">{{ childlink.title }}</h3>
+                            <a href="{{ childlink.url }}" class="mt-2 bg-white text-black px-4 py-2 rounded-full"
+                              >Discover now</a
+                            >
+                          </div>
+                        </div>
                       {% endfor %}
-                    </ul>
-                  </details>
-                {% else %}
-                  <a href="{{ link.url }}" class="menu-drawer__menu-item link link--text">{{ link.title }}</a>
+                    </div>
+                  </div>
                 {% endif %}
               </li>
             {% endfor %}
