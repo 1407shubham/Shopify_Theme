@@ -39,6 +39,14 @@
     "header": {
       "type": "header",
       "blocks": {
+        "menu_image_UxjzLJ": {
+          "type": "menu-image",
+          "settings": {
+            "link_name": "loungesets",
+            "link_title": "",
+            "link_url": ""
+          }
+        },
         "menu_image_b38bJR": {
           "type": "menu-image",
           "settings": {
@@ -50,6 +58,7 @@
         }
       },
       "block_order": [
+        "menu_image_UxjzLJ",
         "menu_image_b38bJR"
       ],
       "settings": {
