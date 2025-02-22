@@ -15,3 +15,19 @@
   text-align: center;
   padding: 20px 0;
 }
+.custom-header {
+  font-family: Arial, sans-serif;
+}
+.top-bar a:hover {
+  text-decoration: underline;
+}
+.main-nav .menu-links a {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.main-nav .menu-links a:hover {
+  text-decoration: underline;
+}
+.main-nav .bg-[#b1a598] {
+  background-color: #b1a598;
+}
