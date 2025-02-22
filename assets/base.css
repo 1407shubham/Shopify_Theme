@@ -15,6 +15,9 @@
   text-align: center;
   padding: 20px 0;
 }
+.custom-header-container {
+  background: #f7f5ef !important;
+}
 /* Define the custom property (CSS variable) */
 :root {
   --font-heading-scale: 1.2; /* Adjust this value as needed */
