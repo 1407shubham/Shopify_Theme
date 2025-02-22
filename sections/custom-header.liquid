@@ -4,13 +4,47 @@
   "settings": []
 }
 {% endschema %}
-<div class="custom-header-container">
-  <h2>Custom Header</h2>
-  <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/collections/all">Shop</a></li>
-      <li><a href="/contact">Contact</a></li>
-    </ul>
+<header class="custom-header">
+  <!-- Top Bar -->
+  <div class="top-bar bg-black text-white text-sm py-1 flex justify-between items-center px-4">
+    <div>
+      <span class="text-green-500">Trustpilot</span>
+      <span class="ml-2">WINTERSALE • <a href="#" class="underline">ENJOY 40% OFF THIS MONTH</a></span>
+    </div>
+    <div>
+      <a href="#" class="text-white">Customer service</a>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <nav class="main-nav bg-[#b1a598] text-white py-3">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <!-- Logo -->
+      <a href="/" class="text-3xl font-bold">
+        <span class="text-white">next</span>
+      </a>
+
+      <!-- Menu Links -->
+      <ul class="menu-links flex space-x-6">
+        <li><a href="#" class="hover:underline">Tables</a></li>
+        <li><a href="#" class="hover:underline">Chairs</a></li>
+        <li><a href="#" class="hover:underline">Lounge</a></li>
+        <li><a href="#" class="hover:underline">Loungesets</a></li>
+        <li><a href="#" class="hover:underline">Accessories</a></li>
+        <li><a href="#" class="bg-red-500 text-white px-2 py-1 rounded">Sale</a></li>
+        <li><a href="#" class="hover:underline">About us</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
+      </ul>
+
+      <!-- Right Icons -->
+      <div class="flex space-x-4 items-center">
+        <span>NL (EUR €)</span>
+        <span>🇳🇱</span>
+        <span>🌙</span>
+        <a href="#" class="hover:text-gray-300">🔍</a>
+        <a href="#" class="hover:text-gray-300">👤</a>
+        <a href="#" class="hover:text-gray-300">🛒</a>
+      </div>
+    </div>
   </nav>
-</div>
+</header>
