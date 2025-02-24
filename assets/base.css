@@ -5,7 +5,8 @@
   font-style: normal;
 }
 
-body {
+body,
+.full-unstyled-link {
   font-family: "Roboto-Regular", sans-serif;
 }
 /* Define the custom property (CSS variable) */
